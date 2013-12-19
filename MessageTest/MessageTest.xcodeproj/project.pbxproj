@@ -1,0 +1,1200 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		836AF5A3185ABDFC002D1217 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836AF5A2185ABDFC002D1217 /* Foundation.framework */; };
+		836AF5A5185ABDFC002D1217 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836AF5A4185ABDFC002D1217 /* UIKit.framework */; };
+		836AF5B0185ABDFC002D1217 /* MessageTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 836AF5AF185ABDFC002D1217 /* MessageTestController.m */; };
+		836AF5C0185ABE70002D1217 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836AF5BF185ABE70002D1217 /* CoreGraphics.framework */; };
+		836AF5C2185ABE77002D1217 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836AF5C1185ABE77002D1217 /* CoreTelephony.framework */; };
+		836AF5C4185ABE84002D1217 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 836AF5C3185ABE84002D1217 /* libsubstrate.dylib */; };
+		836AF5C6185ABE94002D1217 /* ChatKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836AF5C5185ABE94002D1217 /* ChatKit.framework */; };
+		836AF67F185ABF2C002D1217 /* _CKConversation.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5C9185ABF2C002D1217 /* _CKConversation.h */; };
+		836AF680185ABF2C002D1217 /* _MFComposeRecipientView-ReachingIn.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5CA185ABF2C002D1217 /* _MFComposeRecipientView-ReachingIn.h */; };
+		836AF681185ABF2C002D1217 /* _MFComposeRecipientViewDelegate-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5CB185ABF2C002D1217 /* _MFComposeRecipientViewDelegate-Protocol.h */; };
+		836AF682185ABF2C002D1217 /* ABNewPersonViewController-ChatKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5CC185ABF2C002D1217 /* ABNewPersonViewController-ChatKitAdditions.h */; };
+		836AF683185ABF2C002D1217 /* ABNewPersonViewControllerDelegate-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5CD185ABF2C002D1217 /* ABNewPersonViewControllerDelegate-Protocol.h */; };
+		836AF684185ABF2C002D1217 /* ABPeoplePickerNavigationController-ChatKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5CE185ABF2C002D1217 /* ABPeoplePickerNavigationController-ChatKitAdditions.h */; };
+		836AF685185ABF2C002D1217 /* ABPeoplePickerNavigationControllerDelegate-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5CF185ABF2C002D1217 /* ABPeoplePickerNavigationControllerDelegate-Protocol.h */; };
+		836AF686185ABF2C002D1217 /* ABPersonViewControllerDelegate-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5D0185ABF2C002D1217 /* ABPersonViewControllerDelegate-Protocol.h */; };
+		836AF687185ABF2C002D1217 /* ABUnknownPersonViewControllerDelegate-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5D1185ABF2C002D1217 /* ABUnknownPersonViewControllerDelegate-Protocol.h */; };
+		836AF688185ABF2C002D1217 /* AFContextProvider-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5D2185ABF2C002D1217 /* AFContextProvider-Protocol.h */; };
+		836AF689185ABF2C002D1217 /* AlwaysHighlightingPlacardButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5D3185ABF2C002D1217 /* AlwaysHighlightingPlacardButton.h */; };
+		836AF68A185ABF2C002D1217 /* CDStructures.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5D4185ABF2C002D1217 /* CDStructures.h */; };
+		836AF68B185ABF2C002D1217 /* CKABNewPersonViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5D5185ABF2C002D1217 /* CKABNewPersonViewController.h */; };
+		836AF68C185ABF2C002D1217 /* CKABUnknownPersonViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5D6185ABF2C002D1217 /* CKABUnknownPersonViewController.h */; };
+		836AF68D185ABF2C002D1217 /* CKActionSheetManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5D7185ABF2C002D1217 /* CKActionSheetManager.h */; };
+		836AF68E185ABF2C002D1217 /* CKAggregateConversation.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5D8185ABF2C002D1217 /* CKAggregateConversation.h */; };
+		836AF68F185ABF2C002D1217 /* CKAnimatedImageMediaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5D9185ABF2C002D1217 /* CKAnimatedImageMediaObject.h */; };
+		836AF690185ABF2C002D1217 /* CKAtomListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5DA185ABF2C002D1217 /* CKAtomListView.h */; };
+		836AF691185ABF2C002D1217 /* CKAudioMediaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5DB185ABF2C002D1217 /* CKAudioMediaObject.h */; };
+		836AF692185ABF2C002D1217 /* CKAVMediaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5DC185ABF2C002D1217 /* CKAVMediaObject.h */; };
+		836AF693185ABF2C002D1217 /* CKBalloonView.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5DD185ABF2C002D1217 /* CKBalloonView.h */; };
+		836AF694185ABF2C002D1217 /* CKCachedImageBalloonView.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5DE185ABF2C002D1217 /* CKCachedImageBalloonView.h */; };
+		836AF695185ABF2C002D1217 /* CKClearLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5DF185ABF2C002D1217 /* CKClearLabel.h */; };
+		836AF696185ABF2C002D1217 /* CKClientComposeMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5E0185ABF2C002D1217 /* CKClientComposeMessage.h */; };
+		836AF697185ABF2C002D1217 /* CKClientComposeServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5E1185ABF2C002D1217 /* CKClientComposeServer.h */; };
+		836AF698185ABF2C002D1217 /* CKClientComposeService.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5E2185ABF2C002D1217 /* CKClientComposeService.h */; };
+		836AF699185ABF2C002D1217 /* CKComposeRecipientView.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5E3185ABF2C002D1217 /* CKComposeRecipientView.h */; };
+		836AF69A185ABF2C002D1217 /* CKCompressibleImageMediaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5E4185ABF2C002D1217 /* CKCompressibleImageMediaObject.h */; };
+		836AF69B185ABF2C002D1217 /* CKContentEntryBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5E5185ABF2C002D1217 /* CKContentEntryBridge.h */; };
+		836AF69C185ABF2C002D1217 /* CKContentEntryBridgeClient-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5E6185ABF2C002D1217 /* CKContentEntryBridgeClient-Protocol.h */; };
+		836AF69D185ABF2C002D1217 /* CKContentEntryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5E7185ABF2C002D1217 /* CKContentEntryView.h */; };
+		836AF69E185ABF2C002D1217 /* CKConversationList.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5E8185ABF2C002D1217 /* CKConversationList.h */; };
+		836AF69F185ABF2C002D1217 /* CKConversationListCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5E9185ABF2C002D1217 /* CKConversationListCell.h */; };
+		836AF6A0185ABF2C002D1217 /* CKConversationListController.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5EA185ABF2C002D1217 /* CKConversationListController.h */; };
+		836AF6A1185ABF2C002D1217 /* CKConversationListNewMessageCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5EB185ABF2C002D1217 /* CKConversationListNewMessageCell.h */; };
+		836AF6A2185ABF2C002D1217 /* CKConversationProtocol-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5EC185ABF2C002D1217 /* CKConversationProtocol-Protocol.h */; };
+		836AF6A3185ABF2C002D1217 /* CKConversationSearcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5ED185ABF2C002D1217 /* CKConversationSearcher.h */; };
+		836AF6A4185ABF2C002D1217 /* CKConversationSearcherDelegate-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5EE185ABF2C002D1217 /* CKConversationSearcherDelegate-Protocol.h */; };
+		836AF6A5185ABF2C002D1217 /* CKDashedLineView.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5EF185ABF2C002D1217 /* CKDashedLineView.h */; };
+		836AF6A6185ABF2C002D1217 /* CKDBMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5F0185ABF2C002D1217 /* CKDBMessage.h */; };
+		836AF6A7185ABF2C002D1217 /* CKDefaultPreferredServiceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5F1185ABF2C002D1217 /* CKDefaultPreferredServiceManager.h */; };
+		836AF6A8185ABF2C002D1217 /* CKDeletedMessagePart.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5F2185ABF2C002D1217 /* CKDeletedMessagePart.h */; };
+		836AF6A9185ABF2C002D1217 /* CKDowngradeMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5F3185ABF2C002D1217 /* CKDowngradeMessage.h */; };
+		836AF6AA185ABF2C002D1217 /* CKDowngradeServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5F4185ABF2C002D1217 /* CKDowngradeServer.h */; };
+		836AF6AB185ABF2C002D1217 /* CKDraftManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5F5185ABF2C002D1217 /* CKDraftManager.h */; };
+		836AF6AC185ABF2C002D1217 /* CKEffectsWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5F6185ABF2C002D1217 /* CKEffectsWindow.h */; };
+		836AF6AD185ABF2C002D1217 /* CKEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5F7185ABF2C002D1217 /* CKEntity.h */; };
+		836AF6AE185ABF2C002D1217 /* CKEntityView.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5F8185ABF2C002D1217 /* CKEntityView.h */; };
+		836AF6AF185ABF2C002D1217 /* CKEntryField-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5F9185ABF2C002D1217 /* CKEntryField-Protocol.h */; };
+		836AF6B0185ABF2C002D1217 /* CKFixedImageMediaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5FA185ABF2C002D1217 /* CKFixedImageMediaObject.h */; };
+		836AF6B1185ABF2C002D1217 /* CKGenericFileBalloonView.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5FB185ABF2C002D1217 /* CKGenericFileBalloonView.h */; };
+		836AF6B2185ABF2C002D1217 /* CKImageBalloonView.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5FC185ABF2C002D1217 /* CKImageBalloonView.h */; };
+		836AF6B3185ABF2C002D1217 /* CKImageData.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5FD185ABF2C002D1217 /* CKImageData.h */; };
+		836AF6B4185ABF2C002D1217 /* CKImagePickerMediaPreviewGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5FE185ABF2C002D1217 /* CKImagePickerMediaPreviewGenerator.h */; };
+		836AF6B5185ABF2C002D1217 /* CKIMComposeRecipient.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF5FF185ABF2C002D1217 /* CKIMComposeRecipient.h */; };
+		836AF6B6185ABF2C002D1217 /* CKIMDBMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF600185ABF2C002D1217 /* CKIMDBMessage.h */; };
+		836AF6B7185ABF2C002D1217 /* CKInteractiveImageBalloonView.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF601185ABF2C002D1217 /* CKInteractiveImageBalloonView.h */; };
+		836AF6B8185ABF2C002D1217 /* CKLabelledAtomList.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF602185ABF2C002D1217 /* CKLabelledAtomList.h */; };
+		836AF6B9185ABF2C002D1217 /* CKLinksController.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF603185ABF2C002D1217 /* CKLinksController.h */; };
+		836AF6BA185ABF2C002D1217 /* CKLocationMediaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF604185ABF2C002D1217 /* CKLocationMediaObject.h */; };
+		836AF6BB185ABF2C002D1217 /* CKLoopbackMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF605185ABF2C002D1217 /* CKLoopbackMessage.h */; };
+		836AF6BC185ABF2C002D1217 /* CKLoopbackService.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF606185ABF2C002D1217 /* CKLoopbackService.h */; };
+		836AF6BD185ABF2C002D1217 /* CKLRUCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF607185ABF2C002D1217 /* CKLRUCache.h */; };
+		836AF6BE185ABF2C002D1217 /* CKMadridEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF608185ABF2C002D1217 /* CKMadridEntity.h */; };
+		836AF6BF185ABF2C002D1217 /* CKMadridMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF609185ABF2C002D1217 /* CKMadridMessage.h */; };
+		836AF6C0185ABF2C002D1217 /* CKMadridService.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF60A185ABF2C002D1217 /* CKMadridService.h */; };
+		836AF6C1185ABF2C002D1217 /* CKMediaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF60B185ABF2C002D1217 /* CKMediaObject.h */; };
+		836AF6C2185ABF2C002D1217 /* CKMediaObjectManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF60C185ABF2C002D1217 /* CKMediaObjectManager.h */; };
+		836AF6C3185ABF2C002D1217 /* CKMediaObjectMessagePart.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF60D185ABF2C002D1217 /* CKMediaObjectMessagePart.h */; };
+		836AF6C4185ABF2C002D1217 /* CKMediaPreviewGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF60E185ABF2C002D1217 /* CKMediaPreviewGenerator.h */; };
+		836AF6C5185ABF2C002D1217 /* CKMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF60F185ABF2C002D1217 /* CKMessage.h */; };
+		836AF6C6185ABF2C002D1217 /* CKMessageCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF610185ABF2C002D1217 /* CKMessageCell.h */; };
+		836AF6C7185ABF2C002D1217 /* CKMessageComposition.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF611185ABF2C002D1217 /* CKMessageComposition.h */; };
+		836AF6C8185ABF2C002D1217 /* CKMessageEncodingInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF612185ABF2C002D1217 /* CKMessageEncodingInfo.h */; };
+		836AF6C9185ABF2C002D1217 /* CKMessageEntryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF613185ABF2C002D1217 /* CKMessageEntryView.h */; };
+		836AF6CA185ABF2C002D1217 /* CKMessageLinkedComposition.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF614185ABF2C002D1217 /* CKMessageLinkedComposition.h */; };
+		836AF6CB185ABF2C002D1217 /* CKMessagePart.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF615185ABF2C002D1217 /* CKMessagePart.h */; };
+		836AF6CC185ABF2C002D1217 /* CKMessagePartComposeResourcePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF616185ABF2C002D1217 /* CKMessagePartComposeResourcePool.h */; };
+		836AF6CD185ABF2C002D1217 /* CKMessagePartURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF617185ABF2C002D1217 /* CKMessagePartURLProtocol.h */; };
+		836AF6CE185ABF2C002D1217 /* CKMessagesAppPreferredServiceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF618185ABF2C002D1217 /* CKMessagesAppPreferredServiceManager.h */; };
+		836AF6CF185ABF2C002D1217 /* CKMessageStandaloneComposition.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF619185ABF2C002D1217 /* CKMessageStandaloneComposition.h */; };
+		836AF6D0185ABF2C002D1217 /* CKMessageStatusCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF61A185ABF2C002D1217 /* CKMessageStatusCell.h */; };
+		836AF6D1185ABF2C002D1217 /* CKOverlayViewProtocol-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF61B185ABF2C002D1217 /* CKOverlayViewProtocol-Protocol.h */; };
+		836AF6D2185ABF2C002D1217 /* CKPhotoScrollerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF61C185ABF2C002D1217 /* CKPhotoScrollerViewController.h */; };
+		836AF6D3185ABF2C002D1217 /* CKPopoverManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF61D185ABF2C002D1217 /* CKPopoverManager.h */; };
+		836AF6D4185ABF2C002D1217 /* CKPreferredServiceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF61E185ABF2C002D1217 /* CKPreferredServiceManager.h */; };
+		836AF6D5185ABF2C002D1217 /* CKProgressBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF61F185ABF2C002D1217 /* CKProgressBar.h */; };
+		836AF6D6185ABF2C002D1217 /* CKProperlyTransitioningNavigationItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF620185ABF2C002D1217 /* CKProperlyTransitioningNavigationItem.h */; };
+		836AF6D7185ABF2C002D1217 /* CKRecipientGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF621185ABF2C002D1217 /* CKRecipientGenerator.h */; };
+		836AF6D8185ABF2C002D1217 /* CKRecipientListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF622185ABF2C002D1217 /* CKRecipientListView.h */; };
+		836AF6D9185ABF2C002D1217 /* CKRecipientSelectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF623185ABF2C002D1217 /* CKRecipientSelectionView.h */; };
+		836AF6DA185ABF2C002D1217 /* CKRecipientTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF624185ABF2C002D1217 /* CKRecipientTableViewCell.h */; };
+		836AF6DB185ABF2C002D1217 /* CKRichContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF625185ABF2C002D1217 /* CKRichContentView.h */; };
+		836AF6DC185ABF2C002D1217 /* CKSelectedMessageCellView.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF626185ABF2C002D1217 /* CKSelectedMessageCellView.h */; };
+		836AF6DD185ABF2C002D1217 /* CKSendingProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF627185ABF2C002D1217 /* CKSendingProgressView.h */; };
+		836AF6DE185ABF2C002D1217 /* CKService.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF628185ABF2C002D1217 /* CKService.h */; };
+		836AF6DF185ABF2C002D1217 /* CKServiceView.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF629185ABF2C002D1217 /* CKServiceView.h */; };
+		836AF6E0185ABF2C002D1217 /* CKSimpleBalloonView.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF62A185ABF2C002D1217 /* CKSimpleBalloonView.h */; };
+		836AF6E1185ABF2C002D1217 /* CKSMSComposeController.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF62B185ABF2C002D1217 /* CKSMSComposeController.h */; };
+		836AF6E2185ABF2C002D1217 /* CKSMSDeferredMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF62C185ABF2C002D1217 /* CKSMSDeferredMessage.h */; };
+		836AF6E3185ABF2C002D1217 /* CKSMSEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF62D185ABF2C002D1217 /* CKSMSEntity.h */; };
+		836AF6E4185ABF2C002D1217 /* CKSMSMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF62E185ABF2C002D1217 /* CKSMSMessage.h */; };
+		836AF6E5185ABF2C002D1217 /* CKSMSMessageDelivery.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF62F185ABF2C002D1217 /* CKSMSMessageDelivery.h */; };
+		836AF6E6185ABF2C002D1217 /* CKSMSService.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF630185ABF2C002D1217 /* CKSMSService.h */; };
+		836AF6E7185ABF2C002D1217 /* CKSubConversation.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF631185ABF2C002D1217 /* CKSubConversation.h */; };
+		836AF6E8185ABF2C002D1217 /* CKSummaryLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF632185ABF2C002D1217 /* CKSummaryLabel.h */; };
+		836AF6E9185ABF2C002D1217 /* CKTextContentView-WebKitReachIns.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF633185ABF2C002D1217 /* CKTextContentView-WebKitReachIns.h */; };
+		836AF6EA185ABF2C002D1217 /* CKTextContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF634185ABF2C002D1217 /* CKTextContentView.h */; };
+		836AF6EB185ABF2C002D1217 /* CKTextContentViewDelegate-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF635185ABF2C002D1217 /* CKTextContentViewDelegate-Protocol.h */; };
+		836AF6EC185ABF2C002D1217 /* CKTextMessagePart.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF636185ABF2C002D1217 /* CKTextMessagePart.h */; };
+		836AF6ED185ABF2C002D1217 /* CKTimedQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF637185ABF2C002D1217 /* CKTimedQueue.h */; };
+		836AF6EE185ABF2C002D1217 /* CKTimedQueueObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF638185ABF2C002D1217 /* CKTimedQueueObject.h */; };
+		836AF6EF185ABF2C002D1217 /* CKTimestampView.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF639185ABF2C002D1217 /* CKTimestampView.h */; };
+		836AF6F0185ABF2C002D1217 /* CKTranscriptBubbleData-ConvenienceAndClarity.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF63A185ABF2C002D1217 /* CKTranscriptBubbleData-ConvenienceAndClarity.h */; };
+		836AF6F1185ABF2C002D1217 /* CKTranscriptBubbleData.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF63B185ABF2C002D1217 /* CKTranscriptBubbleData.h */; };
+		836AF6F2185ABF2C002D1217 /* CKTranscriptButtonView-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF63C185ABF2C002D1217 /* CKTranscriptButtonView-Protocol.h */; };
+		836AF6F3185ABF2C002D1217 /* CKTranscriptButtonViewDelegate-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF63D185ABF2C002D1217 /* CKTranscriptButtonViewDelegate-Protocol.h */; };
+		836AF6F4185ABF2C002D1217 /* CKTranscriptCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF63E185ABF2C002D1217 /* CKTranscriptCell.h */; };
+		836AF6F5185ABF2C002D1217 /* CKTranscriptController-Keyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF63F185ABF2C002D1217 /* CKTranscriptController-Keyboard.h */; };
+		836AF6F6185ABF2C002D1217 /* CKTranscriptController-MediaEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF640185ABF2C002D1217 /* CKTranscriptController-MediaEntry.h */; };
+		836AF6F7185ABF2C002D1217 /* CKTranscriptController-Testing.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF641185ABF2C002D1217 /* CKTranscriptController-Testing.h */; };
+		836AF6F8185ABF2C002D1217 /* CKTranscriptController-UILoggingExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF642185ABF2C002D1217 /* CKTranscriptController-UILoggingExtensions.h */; };
+		836AF6F9185ABF2C002D1217 /* CKTranscriptController.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF643185ABF2C002D1217 /* CKTranscriptController.h */; };
+		836AF6FA185ABF2C002D1217 /* CKTranscriptHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF644185ABF2C002D1217 /* CKTranscriptHeaderView.h */; };
+		836AF6FB185ABF2C002D1217 /* CKTranscriptStatusController.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF645185ABF2C002D1217 /* CKTranscriptStatusController.h */; };
+		836AF6FC185ABF2C002D1217 /* CKTranscriptTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF646185ABF2C002D1217 /* CKTranscriptTableView.h */; };
+		836AF6FD185ABF2C002D1217 /* CKTranscriptToolbarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF647185ABF2C002D1217 /* CKTranscriptToolbarView.h */; };
+		836AF6FE185ABF2C002D1217 /* CKTypingIndicatorCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF648185ABF2C002D1217 /* CKTypingIndicatorCell.h */; };
+		836AF6FF185ABF2C002D1217 /* CKTypingIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF649185ABF2C002D1217 /* CKTypingIndicatorView.h */; };
+		836AF700185ABF2C002D1217 /* CKUIBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF64A185ABF2C002D1217 /* CKUIBehavior.h */; };
+		836AF701185ABF2C002D1217 /* CKUnknownMediaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF64B185ABF2C002D1217 /* CKUnknownMediaObject.h */; };
+		836AF702185ABF2C002D1217 /* CKUnknownMessagePart.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF64C185ABF2C002D1217 /* CKUnknownMessagePart.h */; };
+		836AF703185ABF2C002D1217 /* CKVCalMediaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF64D185ABF2C002D1217 /* CKVCalMediaObject.h */; };
+		836AF704185ABF2C002D1217 /* CKVCardMediaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF64E185ABF2C002D1217 /* CKVCardMediaObject.h */; };
+		836AF705185ABF2C002D1217 /* CKVideoMediaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF64F185ABF2C002D1217 /* CKVideoMediaObject.h */; };
+		836AF706185ABF2C002D1217 /* CKWBMPImageData.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF650185ABF2C002D1217 /* CKWBMPImageData.h */; };
+		836AF707185ABF2C002D1217 /* CKWBMPImageMediaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF651185ABF2C002D1217 /* CKWBMPImageMediaObject.h */; };
+		836AF708185ABF2C002D1217 /* CKWebBalloonView.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF652185ABF2C002D1217 /* CKWebBalloonView.h */; };
+		836AF709185ABF2C002D1217 /* CKWebDocumentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF653185ABF2C002D1217 /* CKWebDocumentView.h */; };
+		836AF70A185ABF2C002D1217 /* CKWebDocumentViewDelegate-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF654185ABF2C002D1217 /* CKWebDocumentViewDelegate-Protocol.h */; };
+		836AF70B185ABF2C002D1217 /* CKWebImageBalloonView.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF655185ABF2C002D1217 /* CKWebImageBalloonView.h */; };
+		836AF70C185ABF2C002D1217 /* CKWebviewBasedContentEntryBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF656185ABF2C002D1217 /* CKWebviewBasedContentEntryBridge.h */; };
+		836AF70D185ABF2C002D1217 /* DOMEventListener-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF657185ABF2C002D1217 /* DOMEventListener-Protocol.h */; };
+		836AF70E185ABF2C002D1217 /* DOMHTMLElement-CKWebBalloon.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF658185ABF2C002D1217 /* DOMHTMLElement-CKWebBalloon.h */; };
+		836AF70F185ABF2C002D1217 /* MailToolbarButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF659185ABF2C002D1217 /* MailToolbarButton.h */; };
+		836AF710185ABF2C002D1217 /* MFComposeRecipient-Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF65A185ABF2C002D1217 /* MFComposeRecipient-Additions.h */; };
+		836AF711185ABF2C002D1217 /* MFContactsSearchConsumer-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF65B185ABF2C002D1217 /* MFContactsSearchConsumer-Protocol.h */; };
+		836AF712185ABF2C002D1217 /* MFLabelledAtomListDelegate-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF65C185ABF2C002D1217 /* MFLabelledAtomListDelegate-Protocol.h */; };
+		836AF713185ABF2C002D1217 /* NSArray-CKMediaObjectPartAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF65D185ABF2C002D1217 /* NSArray-CKMediaObjectPartAdditions.h */; };
+		836AF714185ABF2C002D1217 /* NSArray-ComposeRecipientConvenience.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF65E185ABF2C002D1217 /* NSArray-ComposeRecipientConvenience.h */; };
+		836AF715185ABF2C002D1217 /* NSArray-SMS.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF65F185ABF2C002D1217 /* NSArray-SMS.h */; };
+		836AF716185ABF2C002D1217 /* NSFastEnumeration-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF660185ABF2C002D1217 /* NSFastEnumeration-Protocol.h */; };
+		836AF717185ABF2C002D1217 /* NSObject-CKMessageEntryViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF661185ABF2C002D1217 /* NSObject-CKMessageEntryViewDelegate.h */; };
+		836AF718185ABF2C002D1217 /* NSObject-CKSMSComposeControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF662185ABF2C002D1217 /* NSObject-CKSMSComposeControllerDelegate.h */; };
+		836AF719185ABF2C002D1217 /* NSObject-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF663185ABF2C002D1217 /* NSObject-Protocol.h */; };
+		836AF71A185ABF2C002D1217 /* NSString-LinkProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF664185ABF2C002D1217 /* NSString-LinkProperties.h */; };
+		836AF71B185ABF2C002D1217 /* NSString-SMSPhoneNumberNormalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF665185ABF2C002D1217 /* NSString-SMSPhoneNumberNormalization.h */; };
+		836AF71C185ABF2C002D1217 /* QLPreviewControllerDataSource-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF666185ABF2C002D1217 /* QLPreviewControllerDataSource-Protocol.h */; };
+		836AF71D185ABF2C002D1217 /* QLPreviewControllerDelegate-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF667185ABF2C002D1217 /* QLPreviewControllerDelegate-Protocol.h */; };
+		836AF71E185ABF2C002D1217 /* QLPreviewItem-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF668185ABF2C002D1217 /* QLPreviewItem-Protocol.h */; };
+		836AF71F185ABF2C002D1217 /* SPDaemonQueryDelegate-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF669185ABF2C002D1217 /* SPDaemonQueryDelegate-Protocol.h */; };
+		836AF720185ABF2C002D1217 /* UIActionSheetDelegate-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF66A185ABF2C002D1217 /* UIActionSheetDelegate-Protocol.h */; };
+		836AF721185ABF2C002D1217 /* UIColor-Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF66B185ABF2C002D1217 /* UIColor-Additions.h */; };
+		836AF722185ABF2C002D1217 /* UIColor-CKWebBalloon.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF66C185ABF2C002D1217 /* UIColor-CKWebBalloon.h */; };
+		836AF723185ABF2C002D1217 /* UIGestureRecognizerDelegate-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF66D185ABF2C002D1217 /* UIGestureRecognizerDelegate-Protocol.h */; };
+		836AF724185ABF2C002D1217 /* UIImage-ChatKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF66E185ABF2C002D1217 /* UIImage-ChatKitAdditions.h */; };
+		836AF725185ABF2C002D1217 /* UIImage-CKEntityInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF66F185ABF2C002D1217 /* UIImage-CKEntityInternal.h */; };
+		836AF726185ABF2C002D1217 /* UIImage-ImageWithTail.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF670185ABF2C002D1217 /* UIImage-ImageWithTail.h */; };
+		836AF727185ABF2C002D1217 /* UIImagePickerController-ChatKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF671185ABF2C002D1217 /* UIImagePickerController-ChatKitAdditions.h */; };
+		836AF728185ABF2C002D1217 /* UIKeyInput-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF672185ABF2C002D1217 /* UIKeyInput-Protocol.h */; };
+		836AF729185ABF2C002D1217 /* UIModalViewDelegate-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF673185ABF2C002D1217 /* UIModalViewDelegate-Protocol.h */; };
+		836AF72A185ABF2C002D1217 /* UINavigationController-ChatKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF674185ABF2C002D1217 /* UINavigationController-ChatKitAdditions.h */; };
+		836AF72B185ABF2C002D1217 /* UINavigationControllerDelegate-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF675185ABF2C002D1217 /* UINavigationControllerDelegate-Protocol.h */; };
+		836AF72C185ABF2C002D1217 /* UIScrollViewDelegate-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF676185ABF2C002D1217 /* UIScrollViewDelegate-Protocol.h */; };
+		836AF72D185ABF2C002D1217 /* UISearchBarDelegate-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF677185ABF2C002D1217 /* UISearchBarDelegate-Protocol.h */; };
+		836AF72E185ABF2C002D1217 /* UISearchDisplayDelegate-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF678185ABF2C002D1217 /* UISearchDisplayDelegate-Protocol.h */; };
+		836AF72F185ABF2C002D1217 /* UITableViewDataSource-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF679185ABF2C002D1217 /* UITableViewDataSource-Protocol.h */; };
+		836AF730185ABF2C002D1217 /* UITableViewDelegate-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF67A185ABF2C002D1217 /* UITableViewDelegate-Protocol.h */; };
+		836AF731185ABF2C002D1217 /* UITextContentViewDelegate-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF67B185ABF2C002D1217 /* UITextContentViewDelegate-Protocol.h */; };
+		836AF732185ABF2C002D1217 /* UITextInputTraits-Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF67C185ABF2C002D1217 /* UITextInputTraits-Protocol.h */; };
+		836AF733185ABF2C002D1217 /* msmholle.h in Headers */ = {isa = PBXBuildFile; fileRef = 836AF67D185ABF2C002D1217 /* msmholle.h */; };
+		836AF734185ABF2C002D1217 /* msmholle.m in Sources */ = {isa = PBXBuildFile; fileRef = 836AF67E185ABF2C002D1217 /* msmholle.m */; };
+		838012BE1861452100990F2D /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 838012B41861452100990F2D /* FMDatabase.h */; };
+		838012BF1861452100990F2D /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 838012B51861452100990F2D /* FMDatabase.m */; };
+		838012C01861452100990F2D /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 838012B61861452100990F2D /* FMDatabaseAdditions.h */; };
+		838012C11861452100990F2D /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 838012B71861452100990F2D /* FMDatabaseAdditions.m */; };
+		838012C21861452100990F2D /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 838012B81861452100990F2D /* FMDatabasePool.h */; };
+		838012C31861452100990F2D /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 838012B91861452100990F2D /* FMDatabasePool.m */; };
+		838012C41861452100990F2D /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 838012BA1861452100990F2D /* FMDatabaseQueue.h */; };
+		838012C51861452100990F2D /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 838012BB1861452100990F2D /* FMDatabaseQueue.m */; };
+		838012C61861452100990F2D /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 838012BC1861452100990F2D /* FMResultSet.h */; };
+		838012C71861452100990F2D /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 838012BD1861452100990F2D /* FMResultSet.m */; };
+		838012CA1861458100990F2D /* readSMSEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 838012C81861458100990F2D /* readSMSEngine.h */; };
+		838012CB1861458100990F2D /* readSMSEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 838012C91861458100990F2D /* readSMSEngine.m */; };
+		838012CD186145DA00990F2D /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 838012CC186145DA00990F2D /* libsqlite3.0.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		836AF59F185ABDFC002D1217 /* MessageTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = MessageTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		836AF5A2185ABDFC002D1217 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		836AF5A4185ABDFC002D1217 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		836AF5A9185ABDFC002D1217 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		836AF5AA185ABDFC002D1217 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		836AF5AC185ABDFC002D1217 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		836AF5AD185ABDFC002D1217 /* MessageTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MessageTest-Prefix.pch"; sourceTree = "<group>"; };
+		836AF5AE185ABDFC002D1217 /* MessageTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageTestController.h; sourceTree = "<group>"; };
+		836AF5AF185ABDFC002D1217 /* MessageTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageTestController.m; sourceTree = "<group>"; };
+		836AF5B5185ABDFC002D1217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Package/System/Library/WeeAppPlugins/MessageTest.bundle/Info.plist; sourceTree = "<group>"; };
+		836AF5B6185ABDFC002D1217 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Package/System/Library/WeeAppPlugins/MessageTest.bundle/InfoPlist.strings; sourceTree = "<group>"; };
+		836AF5B7185ABDFC002D1217 /* WeeAppBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "WeeAppBackground@2x.png"; path = "Package/System/Library/WeeAppPlugins/MessageTest.bundle/WeeAppBackground@2x.png"; sourceTree = "<group>"; };
+		836AF5B8185ABDFC002D1217 /* WeeAppBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WeeAppBackground.png; path = Package/System/Library/WeeAppPlugins/MessageTest.bundle/WeeAppBackground.png; sourceTree = "<group>"; };
+		836AF5B9185ABDFD002D1217 /* BBWeeAppController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBWeeAppController.h; sourceTree = "<group>"; };
+		836AF5BF185ABE70002D1217 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		836AF5C1185ABE77002D1217 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		836AF5C3185ABE84002D1217 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = usr/lib/libsubstrate.dylib; sourceTree = SDKROOT; };
+		836AF5C5185ABE94002D1217 /* ChatKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ChatKit.framework; path = System/Library/PrivateFrameworks/ChatKit.framework; sourceTree = SDKROOT; };
+		836AF5C9185ABF2C002D1217 /* _CKConversation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CKConversation.h; sourceTree = "<group>"; };
+		836AF5CA185ABF2C002D1217 /* _MFComposeRecipientView-ReachingIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "_MFComposeRecipientView-ReachingIn.h"; sourceTree = "<group>"; };
+		836AF5CB185ABF2C002D1217 /* _MFComposeRecipientViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "_MFComposeRecipientViewDelegate-Protocol.h"; sourceTree = "<group>"; };
+		836AF5CC185ABF2C002D1217 /* ABNewPersonViewController-ChatKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ABNewPersonViewController-ChatKitAdditions.h"; sourceTree = "<group>"; };
+		836AF5CD185ABF2C002D1217 /* ABNewPersonViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ABNewPersonViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
+		836AF5CE185ABF2C002D1217 /* ABPeoplePickerNavigationController-ChatKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ABPeoplePickerNavigationController-ChatKitAdditions.h"; sourceTree = "<group>"; };
+		836AF5CF185ABF2C002D1217 /* ABPeoplePickerNavigationControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ABPeoplePickerNavigationControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
+		836AF5D0185ABF2C002D1217 /* ABPersonViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ABPersonViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
+		836AF5D1185ABF2C002D1217 /* ABUnknownPersonViewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ABUnknownPersonViewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
+		836AF5D2185ABF2C002D1217 /* AFContextProvider-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFContextProvider-Protocol.h"; sourceTree = "<group>"; };
+		836AF5D3185ABF2C002D1217 /* AlwaysHighlightingPlacardButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlwaysHighlightingPlacardButton.h; sourceTree = "<group>"; };
+		836AF5D4185ABF2C002D1217 /* CDStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDStructures.h; sourceTree = "<group>"; };
+		836AF5D5185ABF2C002D1217 /* CKABNewPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKABNewPersonViewController.h; sourceTree = "<group>"; };
+		836AF5D6185ABF2C002D1217 /* CKABUnknownPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKABUnknownPersonViewController.h; sourceTree = "<group>"; };
+		836AF5D7185ABF2C002D1217 /* CKActionSheetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKActionSheetManager.h; sourceTree = "<group>"; };
+		836AF5D8185ABF2C002D1217 /* CKAggregateConversation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAggregateConversation.h; sourceTree = "<group>"; };
+		836AF5D9185ABF2C002D1217 /* CKAnimatedImageMediaObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAnimatedImageMediaObject.h; sourceTree = "<group>"; };
+		836AF5DA185ABF2C002D1217 /* CKAtomListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAtomListView.h; sourceTree = "<group>"; };
+		836AF5DB185ABF2C002D1217 /* CKAudioMediaObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAudioMediaObject.h; sourceTree = "<group>"; };
+		836AF5DC185ABF2C002D1217 /* CKAVMediaObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAVMediaObject.h; sourceTree = "<group>"; };
+		836AF5DD185ABF2C002D1217 /* CKBalloonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKBalloonView.h; sourceTree = "<group>"; };
+		836AF5DE185ABF2C002D1217 /* CKCachedImageBalloonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKCachedImageBalloonView.h; sourceTree = "<group>"; };
+		836AF5DF185ABF2C002D1217 /* CKClearLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKClearLabel.h; sourceTree = "<group>"; };
+		836AF5E0185ABF2C002D1217 /* CKClientComposeMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKClientComposeMessage.h; sourceTree = "<group>"; };
+		836AF5E1185ABF2C002D1217 /* CKClientComposeServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKClientComposeServer.h; sourceTree = "<group>"; };
+		836AF5E2185ABF2C002D1217 /* CKClientComposeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKClientComposeService.h; sourceTree = "<group>"; };
+		836AF5E3185ABF2C002D1217 /* CKComposeRecipientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKComposeRecipientView.h; sourceTree = "<group>"; };
+		836AF5E4185ABF2C002D1217 /* CKCompressibleImageMediaObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKCompressibleImageMediaObject.h; sourceTree = "<group>"; };
+		836AF5E5185ABF2C002D1217 /* CKContentEntryBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKContentEntryBridge.h; sourceTree = "<group>"; };
+		836AF5E6185ABF2C002D1217 /* CKContentEntryBridgeClient-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CKContentEntryBridgeClient-Protocol.h"; sourceTree = "<group>"; };
+		836AF5E7185ABF2C002D1217 /* CKContentEntryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKContentEntryView.h; sourceTree = "<group>"; };
+		836AF5E8185ABF2C002D1217 /* CKConversationList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKConversationList.h; sourceTree = "<group>"; };
+		836AF5E9185ABF2C002D1217 /* CKConversationListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKConversationListCell.h; sourceTree = "<group>"; };
+		836AF5EA185ABF2C002D1217 /* CKConversationListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKConversationListController.h; sourceTree = "<group>"; };
+		836AF5EB185ABF2C002D1217 /* CKConversationListNewMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKConversationListNewMessageCell.h; sourceTree = "<group>"; };
+		836AF5EC185ABF2C002D1217 /* CKConversationProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CKConversationProtocol-Protocol.h"; sourceTree = "<group>"; };
+		836AF5ED185ABF2C002D1217 /* CKConversationSearcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKConversationSearcher.h; sourceTree = "<group>"; };
+		836AF5EE185ABF2C002D1217 /* CKConversationSearcherDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CKConversationSearcherDelegate-Protocol.h"; sourceTree = "<group>"; };
+		836AF5EF185ABF2C002D1217 /* CKDashedLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKDashedLineView.h; sourceTree = "<group>"; };
+		836AF5F0185ABF2C002D1217 /* CKDBMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKDBMessage.h; sourceTree = "<group>"; };
+		836AF5F1185ABF2C002D1217 /* CKDefaultPreferredServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKDefaultPreferredServiceManager.h; sourceTree = "<group>"; };
+		836AF5F2185ABF2C002D1217 /* CKDeletedMessagePart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKDeletedMessagePart.h; sourceTree = "<group>"; };
+		836AF5F3185ABF2C002D1217 /* CKDowngradeMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKDowngradeMessage.h; sourceTree = "<group>"; };
+		836AF5F4185ABF2C002D1217 /* CKDowngradeServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKDowngradeServer.h; sourceTree = "<group>"; };
+		836AF5F5185ABF2C002D1217 /* CKDraftManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKDraftManager.h; sourceTree = "<group>"; };
+		836AF5F6185ABF2C002D1217 /* CKEffectsWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKEffectsWindow.h; sourceTree = "<group>"; };
+		836AF5F7185ABF2C002D1217 /* CKEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKEntity.h; sourceTree = "<group>"; };
+		836AF5F8185ABF2C002D1217 /* CKEntityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKEntityView.h; sourceTree = "<group>"; };
+		836AF5F9185ABF2C002D1217 /* CKEntryField-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CKEntryField-Protocol.h"; sourceTree = "<group>"; };
+		836AF5FA185ABF2C002D1217 /* CKFixedImageMediaObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKFixedImageMediaObject.h; sourceTree = "<group>"; };
+		836AF5FB185ABF2C002D1217 /* CKGenericFileBalloonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKGenericFileBalloonView.h; sourceTree = "<group>"; };
+		836AF5FC185ABF2C002D1217 /* CKImageBalloonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKImageBalloonView.h; sourceTree = "<group>"; };
+		836AF5FD185ABF2C002D1217 /* CKImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKImageData.h; sourceTree = "<group>"; };
+		836AF5FE185ABF2C002D1217 /* CKImagePickerMediaPreviewGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKImagePickerMediaPreviewGenerator.h; sourceTree = "<group>"; };
+		836AF5FF185ABF2C002D1217 /* CKIMComposeRecipient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKIMComposeRecipient.h; sourceTree = "<group>"; };
+		836AF600185ABF2C002D1217 /* CKIMDBMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKIMDBMessage.h; sourceTree = "<group>"; };
+		836AF601185ABF2C002D1217 /* CKInteractiveImageBalloonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKInteractiveImageBalloonView.h; sourceTree = "<group>"; };
+		836AF602185ABF2C002D1217 /* CKLabelledAtomList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKLabelledAtomList.h; sourceTree = "<group>"; };
+		836AF603185ABF2C002D1217 /* CKLinksController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKLinksController.h; sourceTree = "<group>"; };
+		836AF604185ABF2C002D1217 /* CKLocationMediaObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKLocationMediaObject.h; sourceTree = "<group>"; };
+		836AF605185ABF2C002D1217 /* CKLoopbackMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKLoopbackMessage.h; sourceTree = "<group>"; };
+		836AF606185ABF2C002D1217 /* CKLoopbackService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKLoopbackService.h; sourceTree = "<group>"; };
+		836AF607185ABF2C002D1217 /* CKLRUCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKLRUCache.h; sourceTree = "<group>"; };
+		836AF608185ABF2C002D1217 /* CKMadridEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMadridEntity.h; sourceTree = "<group>"; };
+		836AF609185ABF2C002D1217 /* CKMadridMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMadridMessage.h; sourceTree = "<group>"; };
+		836AF60A185ABF2C002D1217 /* CKMadridService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMadridService.h; sourceTree = "<group>"; };
+		836AF60B185ABF2C002D1217 /* CKMediaObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMediaObject.h; sourceTree = "<group>"; };
+		836AF60C185ABF2C002D1217 /* CKMediaObjectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMediaObjectManager.h; sourceTree = "<group>"; };
+		836AF60D185ABF2C002D1217 /* CKMediaObjectMessagePart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMediaObjectMessagePart.h; sourceTree = "<group>"; };
+		836AF60E185ABF2C002D1217 /* CKMediaPreviewGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMediaPreviewGenerator.h; sourceTree = "<group>"; };
+		836AF60F185ABF2C002D1217 /* CKMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMessage.h; sourceTree = "<group>"; };
+		836AF610185ABF2C002D1217 /* CKMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMessageCell.h; sourceTree = "<group>"; };
+		836AF611185ABF2C002D1217 /* CKMessageComposition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMessageComposition.h; sourceTree = "<group>"; };
+		836AF612185ABF2C002D1217 /* CKMessageEncodingInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMessageEncodingInfo.h; sourceTree = "<group>"; };
+		836AF613185ABF2C002D1217 /* CKMessageEntryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMessageEntryView.h; sourceTree = "<group>"; };
+		836AF614185ABF2C002D1217 /* CKMessageLinkedComposition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMessageLinkedComposition.h; sourceTree = "<group>"; };
+		836AF615185ABF2C002D1217 /* CKMessagePart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMessagePart.h; sourceTree = "<group>"; };
+		836AF616185ABF2C002D1217 /* CKMessagePartComposeResourcePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMessagePartComposeResourcePool.h; sourceTree = "<group>"; };
+		836AF617185ABF2C002D1217 /* CKMessagePartURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMessagePartURLProtocol.h; sourceTree = "<group>"; };
+		836AF618185ABF2C002D1217 /* CKMessagesAppPreferredServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMessagesAppPreferredServiceManager.h; sourceTree = "<group>"; };
+		836AF619185ABF2C002D1217 /* CKMessageStandaloneComposition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMessageStandaloneComposition.h; sourceTree = "<group>"; };
+		836AF61A185ABF2C002D1217 /* CKMessageStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKMessageStatusCell.h; sourceTree = "<group>"; };
+		836AF61B185ABF2C002D1217 /* CKOverlayViewProtocol-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CKOverlayViewProtocol-Protocol.h"; sourceTree = "<group>"; };
+		836AF61C185ABF2C002D1217 /* CKPhotoScrollerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKPhotoScrollerViewController.h; sourceTree = "<group>"; };
+		836AF61D185ABF2C002D1217 /* CKPopoverManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKPopoverManager.h; sourceTree = "<group>"; };
+		836AF61E185ABF2C002D1217 /* CKPreferredServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKPreferredServiceManager.h; sourceTree = "<group>"; };
+		836AF61F185ABF2C002D1217 /* CKProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKProgressBar.h; sourceTree = "<group>"; };
+		836AF620185ABF2C002D1217 /* CKProperlyTransitioningNavigationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKProperlyTransitioningNavigationItem.h; sourceTree = "<group>"; };
+		836AF621185ABF2C002D1217 /* CKRecipientGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKRecipientGenerator.h; sourceTree = "<group>"; };
+		836AF622185ABF2C002D1217 /* CKRecipientListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKRecipientListView.h; sourceTree = "<group>"; };
+		836AF623185ABF2C002D1217 /* CKRecipientSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKRecipientSelectionView.h; sourceTree = "<group>"; };
+		836AF624185ABF2C002D1217 /* CKRecipientTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKRecipientTableViewCell.h; sourceTree = "<group>"; };
+		836AF625185ABF2C002D1217 /* CKRichContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKRichContentView.h; sourceTree = "<group>"; };
+		836AF626185ABF2C002D1217 /* CKSelectedMessageCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSelectedMessageCellView.h; sourceTree = "<group>"; };
+		836AF627185ABF2C002D1217 /* CKSendingProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSendingProgressView.h; sourceTree = "<group>"; };
+		836AF628185ABF2C002D1217 /* CKService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKService.h; sourceTree = "<group>"; };
+		836AF629185ABF2C002D1217 /* CKServiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKServiceView.h; sourceTree = "<group>"; };
+		836AF62A185ABF2C002D1217 /* CKSimpleBalloonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSimpleBalloonView.h; sourceTree = "<group>"; };
+		836AF62B185ABF2C002D1217 /* CKSMSComposeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSMSComposeController.h; sourceTree = "<group>"; };
+		836AF62C185ABF2C002D1217 /* CKSMSDeferredMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSMSDeferredMessage.h; sourceTree = "<group>"; };
+		836AF62D185ABF2C002D1217 /* CKSMSEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSMSEntity.h; sourceTree = "<group>"; };
+		836AF62E185ABF2C002D1217 /* CKSMSMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSMSMessage.h; sourceTree = "<group>"; };
+		836AF62F185ABF2C002D1217 /* CKSMSMessageDelivery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSMSMessageDelivery.h; sourceTree = "<group>"; };
+		836AF630185ABF2C002D1217 /* CKSMSService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSMSService.h; sourceTree = "<group>"; };
+		836AF631185ABF2C002D1217 /* CKSubConversation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSubConversation.h; sourceTree = "<group>"; };
+		836AF632185ABF2C002D1217 /* CKSummaryLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKSummaryLabel.h; sourceTree = "<group>"; };
+		836AF633185ABF2C002D1217 /* CKTextContentView-WebKitReachIns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CKTextContentView-WebKitReachIns.h"; sourceTree = "<group>"; };
+		836AF634185ABF2C002D1217 /* CKTextContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTextContentView.h; sourceTree = "<group>"; };
+		836AF635185ABF2C002D1217 /* CKTextContentViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CKTextContentViewDelegate-Protocol.h"; sourceTree = "<group>"; };
+		836AF636185ABF2C002D1217 /* CKTextMessagePart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTextMessagePart.h; sourceTree = "<group>"; };
+		836AF637185ABF2C002D1217 /* CKTimedQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTimedQueue.h; sourceTree = "<group>"; };
+		836AF638185ABF2C002D1217 /* CKTimedQueueObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTimedQueueObject.h; sourceTree = "<group>"; };
+		836AF639185ABF2C002D1217 /* CKTimestampView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTimestampView.h; sourceTree = "<group>"; };
+		836AF63A185ABF2C002D1217 /* CKTranscriptBubbleData-ConvenienceAndClarity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CKTranscriptBubbleData-ConvenienceAndClarity.h"; sourceTree = "<group>"; };
+		836AF63B185ABF2C002D1217 /* CKTranscriptBubbleData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTranscriptBubbleData.h; sourceTree = "<group>"; };
+		836AF63C185ABF2C002D1217 /* CKTranscriptButtonView-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CKTranscriptButtonView-Protocol.h"; sourceTree = "<group>"; };
+		836AF63D185ABF2C002D1217 /* CKTranscriptButtonViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CKTranscriptButtonViewDelegate-Protocol.h"; sourceTree = "<group>"; };
+		836AF63E185ABF2C002D1217 /* CKTranscriptCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTranscriptCell.h; sourceTree = "<group>"; };
+		836AF63F185ABF2C002D1217 /* CKTranscriptController-Keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CKTranscriptController-Keyboard.h"; sourceTree = "<group>"; };
+		836AF640185ABF2C002D1217 /* CKTranscriptController-MediaEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CKTranscriptController-MediaEntry.h"; sourceTree = "<group>"; };
+		836AF641185ABF2C002D1217 /* CKTranscriptController-Testing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CKTranscriptController-Testing.h"; sourceTree = "<group>"; };
+		836AF642185ABF2C002D1217 /* CKTranscriptController-UILoggingExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CKTranscriptController-UILoggingExtensions.h"; sourceTree = "<group>"; };
+		836AF643185ABF2C002D1217 /* CKTranscriptController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTranscriptController.h; sourceTree = "<group>"; };
+		836AF644185ABF2C002D1217 /* CKTranscriptHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTranscriptHeaderView.h; sourceTree = "<group>"; };
+		836AF645185ABF2C002D1217 /* CKTranscriptStatusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTranscriptStatusController.h; sourceTree = "<group>"; };
+		836AF646185ABF2C002D1217 /* CKTranscriptTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTranscriptTableView.h; sourceTree = "<group>"; };
+		836AF647185ABF2C002D1217 /* CKTranscriptToolbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTranscriptToolbarView.h; sourceTree = "<group>"; };
+		836AF648185ABF2C002D1217 /* CKTypingIndicatorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTypingIndicatorCell.h; sourceTree = "<group>"; };
+		836AF649185ABF2C002D1217 /* CKTypingIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKTypingIndicatorView.h; sourceTree = "<group>"; };
+		836AF64A185ABF2C002D1217 /* CKUIBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKUIBehavior.h; sourceTree = "<group>"; };
+		836AF64B185ABF2C002D1217 /* CKUnknownMediaObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKUnknownMediaObject.h; sourceTree = "<group>"; };
+		836AF64C185ABF2C002D1217 /* CKUnknownMessagePart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKUnknownMessagePart.h; sourceTree = "<group>"; };
+		836AF64D185ABF2C002D1217 /* CKVCalMediaObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKVCalMediaObject.h; sourceTree = "<group>"; };
+		836AF64E185ABF2C002D1217 /* CKVCardMediaObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKVCardMediaObject.h; sourceTree = "<group>"; };
+		836AF64F185ABF2C002D1217 /* CKVideoMediaObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKVideoMediaObject.h; sourceTree = "<group>"; };
+		836AF650185ABF2C002D1217 /* CKWBMPImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKWBMPImageData.h; sourceTree = "<group>"; };
+		836AF651185ABF2C002D1217 /* CKWBMPImageMediaObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKWBMPImageMediaObject.h; sourceTree = "<group>"; };
+		836AF652185ABF2C002D1217 /* CKWebBalloonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKWebBalloonView.h; sourceTree = "<group>"; };
+		836AF653185ABF2C002D1217 /* CKWebDocumentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKWebDocumentView.h; sourceTree = "<group>"; };
+		836AF654185ABF2C002D1217 /* CKWebDocumentViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CKWebDocumentViewDelegate-Protocol.h"; sourceTree = "<group>"; };
+		836AF655185ABF2C002D1217 /* CKWebImageBalloonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKWebImageBalloonView.h; sourceTree = "<group>"; };
+		836AF656185ABF2C002D1217 /* CKWebviewBasedContentEntryBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKWebviewBasedContentEntryBridge.h; sourceTree = "<group>"; };
+		836AF657185ABF2C002D1217 /* DOMEventListener-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DOMEventListener-Protocol.h"; sourceTree = "<group>"; };
+		836AF658185ABF2C002D1217 /* DOMHTMLElement-CKWebBalloon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DOMHTMLElement-CKWebBalloon.h"; sourceTree = "<group>"; };
+		836AF659185ABF2C002D1217 /* MailToolbarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailToolbarButton.h; sourceTree = "<group>"; };
+		836AF65A185ABF2C002D1217 /* MFComposeRecipient-Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFComposeRecipient-Additions.h"; sourceTree = "<group>"; };
+		836AF65B185ABF2C002D1217 /* MFContactsSearchConsumer-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFContactsSearchConsumer-Protocol.h"; sourceTree = "<group>"; };
+		836AF65C185ABF2C002D1217 /* MFLabelledAtomListDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFLabelledAtomListDelegate-Protocol.h"; sourceTree = "<group>"; };
+		836AF65D185ABF2C002D1217 /* NSArray-CKMediaObjectPartAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray-CKMediaObjectPartAdditions.h"; sourceTree = "<group>"; };
+		836AF65E185ABF2C002D1217 /* NSArray-ComposeRecipientConvenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray-ComposeRecipientConvenience.h"; sourceTree = "<group>"; };
+		836AF65F185ABF2C002D1217 /* NSArray-SMS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray-SMS.h"; sourceTree = "<group>"; };
+		836AF660185ABF2C002D1217 /* NSFastEnumeration-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFastEnumeration-Protocol.h"; sourceTree = "<group>"; };
+		836AF661185ABF2C002D1217 /* NSObject-CKMessageEntryViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-CKMessageEntryViewDelegate.h"; sourceTree = "<group>"; };
+		836AF662185ABF2C002D1217 /* NSObject-CKSMSComposeControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-CKSMSComposeControllerDelegate.h"; sourceTree = "<group>"; };
+		836AF663185ABF2C002D1217 /* NSObject-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-Protocol.h"; sourceTree = "<group>"; };
+		836AF664185ABF2C002D1217 /* NSString-LinkProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-LinkProperties.h"; sourceTree = "<group>"; };
+		836AF665185ABF2C002D1217 /* NSString-SMSPhoneNumberNormalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-SMSPhoneNumberNormalization.h"; sourceTree = "<group>"; };
+		836AF666185ABF2C002D1217 /* QLPreviewControllerDataSource-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QLPreviewControllerDataSource-Protocol.h"; sourceTree = "<group>"; };
+		836AF667185ABF2C002D1217 /* QLPreviewControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QLPreviewControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
+		836AF668185ABF2C002D1217 /* QLPreviewItem-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QLPreviewItem-Protocol.h"; sourceTree = "<group>"; };
+		836AF669185ABF2C002D1217 /* SPDaemonQueryDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SPDaemonQueryDelegate-Protocol.h"; sourceTree = "<group>"; };
+		836AF66A185ABF2C002D1217 /* UIActionSheetDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheetDelegate-Protocol.h"; sourceTree = "<group>"; };
+		836AF66B185ABF2C002D1217 /* UIColor-Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor-Additions.h"; sourceTree = "<group>"; };
+		836AF66C185ABF2C002D1217 /* UIColor-CKWebBalloon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor-CKWebBalloon.h"; sourceTree = "<group>"; };
+		836AF66D185ABF2C002D1217 /* UIGestureRecognizerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizerDelegate-Protocol.h"; sourceTree = "<group>"; };
+		836AF66E185ABF2C002D1217 /* UIImage-ChatKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-ChatKitAdditions.h"; sourceTree = "<group>"; };
+		836AF66F185ABF2C002D1217 /* UIImage-CKEntityInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-CKEntityInternal.h"; sourceTree = "<group>"; };
+		836AF670185ABF2C002D1217 /* UIImage-ImageWithTail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-ImageWithTail.h"; sourceTree = "<group>"; };
+		836AF671185ABF2C002D1217 /* UIImagePickerController-ChatKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImagePickerController-ChatKitAdditions.h"; sourceTree = "<group>"; };
+		836AF672185ABF2C002D1217 /* UIKeyInput-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKeyInput-Protocol.h"; sourceTree = "<group>"; };
+		836AF673185ABF2C002D1217 /* UIModalViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIModalViewDelegate-Protocol.h"; sourceTree = "<group>"; };
+		836AF674185ABF2C002D1217 /* UINavigationController-ChatKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController-ChatKitAdditions.h"; sourceTree = "<group>"; };
+		836AF675185ABF2C002D1217 /* UINavigationControllerDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationControllerDelegate-Protocol.h"; sourceTree = "<group>"; };
+		836AF676185ABF2C002D1217 /* UIScrollViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollViewDelegate-Protocol.h"; sourceTree = "<group>"; };
+		836AF677185ABF2C002D1217 /* UISearchBarDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBarDelegate-Protocol.h"; sourceTree = "<group>"; };
+		836AF678185ABF2C002D1217 /* UISearchDisplayDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchDisplayDelegate-Protocol.h"; sourceTree = "<group>"; };
+		836AF679185ABF2C002D1217 /* UITableViewDataSource-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewDataSource-Protocol.h"; sourceTree = "<group>"; };
+		836AF67A185ABF2C002D1217 /* UITableViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewDelegate-Protocol.h"; sourceTree = "<group>"; };
+		836AF67B185ABF2C002D1217 /* UITextContentViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextContentViewDelegate-Protocol.h"; sourceTree = "<group>"; };
+		836AF67C185ABF2C002D1217 /* UITextInputTraits-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextInputTraits-Protocol.h"; sourceTree = "<group>"; };
+		836AF67D185ABF2C002D1217 /* msmholle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = msmholle.h; sourceTree = "<group>"; };
+		836AF67E185ABF2C002D1217 /* msmholle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = msmholle.m; sourceTree = "<group>"; };
+		838012B41861452100990F2D /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		838012B51861452100990F2D /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		838012B61861452100990F2D /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		838012B71861452100990F2D /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		838012B81861452100990F2D /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		838012B91861452100990F2D /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		838012BA1861452100990F2D /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		838012BB1861452100990F2D /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		838012BC1861452100990F2D /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		838012BD1861452100990F2D /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		838012C81861458100990F2D /* readSMSEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = readSMSEngine.h; sourceTree = "<group>"; };
+		838012C91861458100990F2D /* readSMSEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = readSMSEngine.m; sourceTree = "<group>"; };
+		838012CC186145DA00990F2D /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		836AF59B185ABDFC002D1217 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				838012CD186145DA00990F2D /* libsqlite3.0.dylib in Frameworks */,
+				836AF5C4185ABE84002D1217 /* libsubstrate.dylib in Frameworks */,
+				836AF5C6185ABE94002D1217 /* ChatKit.framework in Frameworks */,
+				836AF5C2185ABE77002D1217 /* CoreTelephony.framework in Frameworks */,
+				836AF5C0185ABE70002D1217 /* CoreGraphics.framework in Frameworks */,
+				836AF5A3185ABDFC002D1217 /* Foundation.framework in Frameworks */,
+				836AF5A5185ABDFC002D1217 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		836AF593185ABDFC002D1217 = {
+			isa = PBXGroup;
+			children = (
+				838012B11861452100990F2D /* readDB */,
+				836AF5C7185ABF2C002D1217 /* MessageSend */,
+				836AF5A6185ABDFC002D1217 /* MessageTest */,
+				838012B21861452100990F2D /* ThirdLib */,
+				836AF5A1185ABDFC002D1217 /* Frameworks */,
+				836AF5A0185ABDFC002D1217 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		836AF5A0185ABDFC002D1217 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				836AF59F185ABDFC002D1217 /* MessageTest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		836AF5A1185ABDFC002D1217 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				838012CC186145DA00990F2D /* libsqlite3.0.dylib */,
+				836AF5C3185ABE84002D1217 /* libsubstrate.dylib */,
+				836AF5C5185ABE94002D1217 /* ChatKit.framework */,
+				836AF5C1185ABE77002D1217 /* CoreTelephony.framework */,
+				836AF5BF185ABE70002D1217 /* CoreGraphics.framework */,
+				836AF5A2185ABDFC002D1217 /* Foundation.framework */,
+				836AF5A4185ABDFC002D1217 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		836AF5A6185ABDFC002D1217 /* MessageTest */ = {
+			isa = PBXGroup;
+			children = (
+				836AF5AE185ABDFC002D1217 /* MessageTestController.h */,
+				836AF5AF185ABDFC002D1217 /* MessageTestController.m */,
+				836AF5B9185ABDFD002D1217 /* BBWeeAppController.h */,
+				836AF5A7185ABDFC002D1217 /* Package */,
+				836AF5AB185ABDFC002D1217 /* Supporting Files */,
+			);
+			path = MessageTest;
+			sourceTree = "<group>";
+		};
+		836AF5A7185ABDFC002D1217 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				836AF5A8185ABDFC002D1217 /* DEBIAN */,
+				836AF5B1185ABDFC002D1217 /* System */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		836AF5A8185ABDFC002D1217 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				836AF5A9185ABDFC002D1217 /* control.txt */,
+				836AF5AA185ABDFC002D1217 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		836AF5AB185ABDFC002D1217 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				836AF5AC185ABDFC002D1217 /* PackageVersion.plist */,
+				836AF5AD185ABDFC002D1217 /* MessageTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		836AF5B1185ABDFC002D1217 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				836AF5B2185ABDFC002D1217 /* Library */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		836AF5B2185ABDFC002D1217 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				836AF5B3185ABDFC002D1217 /* WeeAppPlugins */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		836AF5B3185ABDFC002D1217 /* WeeAppPlugins */ = {
+			isa = PBXGroup;
+			children = (
+				836AF5B4185ABDFC002D1217 /* ___PACKAGENAME___ */,
+			);
+			name = WeeAppPlugins;
+			sourceTree = "<group>";
+		};
+		836AF5B4185ABDFC002D1217 /* ___PACKAGENAME___ */ = {
+			isa = PBXGroup;
+			children = (
+				836AF5B5185ABDFC002D1217 /* Info.plist */,
+				836AF5B6185ABDFC002D1217 /* InfoPlist.strings */,
+				836AF5B7185ABDFC002D1217 /* WeeAppBackground@2x.png */,
+				836AF5B8185ABDFC002D1217 /* WeeAppBackground.png */,
+			);
+			name = "___PACKAGENAME___";
+			sourceTree = "<group>";
+		};
+		836AF5C7185ABF2C002D1217 /* MessageSend */ = {
+			isa = PBXGroup;
+			children = (
+				836AF5C8185ABF2C002D1217 /* chatk */,
+				836AF67D185ABF2C002D1217 /* msmholle.h */,
+				836AF67E185ABF2C002D1217 /* msmholle.m */,
+			);
+			path = MessageSend;
+			sourceTree = "<group>";
+		};
+		836AF5C8185ABF2C002D1217 /* chatk */ = {
+			isa = PBXGroup;
+			children = (
+				836AF5C9185ABF2C002D1217 /* _CKConversation.h */,
+				836AF5CA185ABF2C002D1217 /* _MFComposeRecipientView-ReachingIn.h */,
+				836AF5CB185ABF2C002D1217 /* _MFComposeRecipientViewDelegate-Protocol.h */,
+				836AF5CC185ABF2C002D1217 /* ABNewPersonViewController-ChatKitAdditions.h */,
+				836AF5CD185ABF2C002D1217 /* ABNewPersonViewControllerDelegate-Protocol.h */,
+				836AF5CE185ABF2C002D1217 /* ABPeoplePickerNavigationController-ChatKitAdditions.h */,
+				836AF5CF185ABF2C002D1217 /* ABPeoplePickerNavigationControllerDelegate-Protocol.h */,
+				836AF5D0185ABF2C002D1217 /* ABPersonViewControllerDelegate-Protocol.h */,
+				836AF5D1185ABF2C002D1217 /* ABUnknownPersonViewControllerDelegate-Protocol.h */,
+				836AF5D2185ABF2C002D1217 /* AFContextProvider-Protocol.h */,
+				836AF5D3185ABF2C002D1217 /* AlwaysHighlightingPlacardButton.h */,
+				836AF5D4185ABF2C002D1217 /* CDStructures.h */,
+				836AF5D5185ABF2C002D1217 /* CKABNewPersonViewController.h */,
+				836AF5D6185ABF2C002D1217 /* CKABUnknownPersonViewController.h */,
+				836AF5D7185ABF2C002D1217 /* CKActionSheetManager.h */,
+				836AF5D8185ABF2C002D1217 /* CKAggregateConversation.h */,
+				836AF5D9185ABF2C002D1217 /* CKAnimatedImageMediaObject.h */,
+				836AF5DA185ABF2C002D1217 /* CKAtomListView.h */,
+				836AF5DB185ABF2C002D1217 /* CKAudioMediaObject.h */,
+				836AF5DC185ABF2C002D1217 /* CKAVMediaObject.h */,
+				836AF5DD185ABF2C002D1217 /* CKBalloonView.h */,
+				836AF5DE185ABF2C002D1217 /* CKCachedImageBalloonView.h */,
+				836AF5DF185ABF2C002D1217 /* CKClearLabel.h */,
+				836AF5E0185ABF2C002D1217 /* CKClientComposeMessage.h */,
+				836AF5E1185ABF2C002D1217 /* CKClientComposeServer.h */,
+				836AF5E2185ABF2C002D1217 /* CKClientComposeService.h */,
+				836AF5E3185ABF2C002D1217 /* CKComposeRecipientView.h */,
+				836AF5E4185ABF2C002D1217 /* CKCompressibleImageMediaObject.h */,
+				836AF5E5185ABF2C002D1217 /* CKContentEntryBridge.h */,
+				836AF5E6185ABF2C002D1217 /* CKContentEntryBridgeClient-Protocol.h */,
+				836AF5E7185ABF2C002D1217 /* CKContentEntryView.h */,
+				836AF5E8185ABF2C002D1217 /* CKConversationList.h */,
+				836AF5E9185ABF2C002D1217 /* CKConversationListCell.h */,
+				836AF5EA185ABF2C002D1217 /* CKConversationListController.h */,
+				836AF5EB185ABF2C002D1217 /* CKConversationListNewMessageCell.h */,
+				836AF5EC185ABF2C002D1217 /* CKConversationProtocol-Protocol.h */,
+				836AF5ED185ABF2C002D1217 /* CKConversationSearcher.h */,
+				836AF5EE185ABF2C002D1217 /* CKConversationSearcherDelegate-Protocol.h */,
+				836AF5EF185ABF2C002D1217 /* CKDashedLineView.h */,
+				836AF5F0185ABF2C002D1217 /* CKDBMessage.h */,
+				836AF5F1185ABF2C002D1217 /* CKDefaultPreferredServiceManager.h */,
+				836AF5F2185ABF2C002D1217 /* CKDeletedMessagePart.h */,
+				836AF5F3185ABF2C002D1217 /* CKDowngradeMessage.h */,
+				836AF5F4185ABF2C002D1217 /* CKDowngradeServer.h */,
+				836AF5F5185ABF2C002D1217 /* CKDraftManager.h */,
+				836AF5F6185ABF2C002D1217 /* CKEffectsWindow.h */,
+				836AF5F7185ABF2C002D1217 /* CKEntity.h */,
+				836AF5F8185ABF2C002D1217 /* CKEntityView.h */,
+				836AF5F9185ABF2C002D1217 /* CKEntryField-Protocol.h */,
+				836AF5FA185ABF2C002D1217 /* CKFixedImageMediaObject.h */,
+				836AF5FB185ABF2C002D1217 /* CKGenericFileBalloonView.h */,
+				836AF5FC185ABF2C002D1217 /* CKImageBalloonView.h */,
+				836AF5FD185ABF2C002D1217 /* CKImageData.h */,
+				836AF5FE185ABF2C002D1217 /* CKImagePickerMediaPreviewGenerator.h */,
+				836AF5FF185ABF2C002D1217 /* CKIMComposeRecipient.h */,
+				836AF600185ABF2C002D1217 /* CKIMDBMessage.h */,
+				836AF601185ABF2C002D1217 /* CKInteractiveImageBalloonView.h */,
+				836AF602185ABF2C002D1217 /* CKLabelledAtomList.h */,
+				836AF603185ABF2C002D1217 /* CKLinksController.h */,
+				836AF604185ABF2C002D1217 /* CKLocationMediaObject.h */,
+				836AF605185ABF2C002D1217 /* CKLoopbackMessage.h */,
+				836AF606185ABF2C002D1217 /* CKLoopbackService.h */,
+				836AF607185ABF2C002D1217 /* CKLRUCache.h */,
+				836AF608185ABF2C002D1217 /* CKMadridEntity.h */,
+				836AF609185ABF2C002D1217 /* CKMadridMessage.h */,
+				836AF60A185ABF2C002D1217 /* CKMadridService.h */,
+				836AF60B185ABF2C002D1217 /* CKMediaObject.h */,
+				836AF60C185ABF2C002D1217 /* CKMediaObjectManager.h */,
+				836AF60D185ABF2C002D1217 /* CKMediaObjectMessagePart.h */,
+				836AF60E185ABF2C002D1217 /* CKMediaPreviewGenerator.h */,
+				836AF60F185ABF2C002D1217 /* CKMessage.h */,
+				836AF610185ABF2C002D1217 /* CKMessageCell.h */,
+				836AF611185ABF2C002D1217 /* CKMessageComposition.h */,
+				836AF612185ABF2C002D1217 /* CKMessageEncodingInfo.h */,
+				836AF613185ABF2C002D1217 /* CKMessageEntryView.h */,
+				836AF614185ABF2C002D1217 /* CKMessageLinkedComposition.h */,
+				836AF615185ABF2C002D1217 /* CKMessagePart.h */,
+				836AF616185ABF2C002D1217 /* CKMessagePartComposeResourcePool.h */,
+				836AF617185ABF2C002D1217 /* CKMessagePartURLProtocol.h */,
+				836AF618185ABF2C002D1217 /* CKMessagesAppPreferredServiceManager.h */,
+				836AF619185ABF2C002D1217 /* CKMessageStandaloneComposition.h */,
+				836AF61A185ABF2C002D1217 /* CKMessageStatusCell.h */,
+				836AF61B185ABF2C002D1217 /* CKOverlayViewProtocol-Protocol.h */,
+				836AF61C185ABF2C002D1217 /* CKPhotoScrollerViewController.h */,
+				836AF61D185ABF2C002D1217 /* CKPopoverManager.h */,
+				836AF61E185ABF2C002D1217 /* CKPreferredServiceManager.h */,
+				836AF61F185ABF2C002D1217 /* CKProgressBar.h */,
+				836AF620185ABF2C002D1217 /* CKProperlyTransitioningNavigationItem.h */,
+				836AF621185ABF2C002D1217 /* CKRecipientGenerator.h */,
+				836AF622185ABF2C002D1217 /* CKRecipientListView.h */,
+				836AF623185ABF2C002D1217 /* CKRecipientSelectionView.h */,
+				836AF624185ABF2C002D1217 /* CKRecipientTableViewCell.h */,
+				836AF625185ABF2C002D1217 /* CKRichContentView.h */,
+				836AF626185ABF2C002D1217 /* CKSelectedMessageCellView.h */,
+				836AF627185ABF2C002D1217 /* CKSendingProgressView.h */,
+				836AF628185ABF2C002D1217 /* CKService.h */,
+				836AF629185ABF2C002D1217 /* CKServiceView.h */,
+				836AF62A185ABF2C002D1217 /* CKSimpleBalloonView.h */,
+				836AF62B185ABF2C002D1217 /* CKSMSComposeController.h */,
+				836AF62C185ABF2C002D1217 /* CKSMSDeferredMessage.h */,
+				836AF62D185ABF2C002D1217 /* CKSMSEntity.h */,
+				836AF62E185ABF2C002D1217 /* CKSMSMessage.h */,
+				836AF62F185ABF2C002D1217 /* CKSMSMessageDelivery.h */,
+				836AF630185ABF2C002D1217 /* CKSMSService.h */,
+				836AF631185ABF2C002D1217 /* CKSubConversation.h */,
+				836AF632185ABF2C002D1217 /* CKSummaryLabel.h */,
+				836AF633185ABF2C002D1217 /* CKTextContentView-WebKitReachIns.h */,
+				836AF634185ABF2C002D1217 /* CKTextContentView.h */,
+				836AF635185ABF2C002D1217 /* CKTextContentViewDelegate-Protocol.h */,
+				836AF636185ABF2C002D1217 /* CKTextMessagePart.h */,
+				836AF637185ABF2C002D1217 /* CKTimedQueue.h */,
+				836AF638185ABF2C002D1217 /* CKTimedQueueObject.h */,
+				836AF639185ABF2C002D1217 /* CKTimestampView.h */,
+				836AF63A185ABF2C002D1217 /* CKTranscriptBubbleData-ConvenienceAndClarity.h */,
+				836AF63B185ABF2C002D1217 /* CKTranscriptBubbleData.h */,
+				836AF63C185ABF2C002D1217 /* CKTranscriptButtonView-Protocol.h */,
+				836AF63D185ABF2C002D1217 /* CKTranscriptButtonViewDelegate-Protocol.h */,
+				836AF63E185ABF2C002D1217 /* CKTranscriptCell.h */,
+				836AF63F185ABF2C002D1217 /* CKTranscriptController-Keyboard.h */,
+				836AF640185ABF2C002D1217 /* CKTranscriptController-MediaEntry.h */,
+				836AF641185ABF2C002D1217 /* CKTranscriptController-Testing.h */,
+				836AF642185ABF2C002D1217 /* CKTranscriptController-UILoggingExtensions.h */,
+				836AF643185ABF2C002D1217 /* CKTranscriptController.h */,
+				836AF644185ABF2C002D1217 /* CKTranscriptHeaderView.h */,
+				836AF645185ABF2C002D1217 /* CKTranscriptStatusController.h */,
+				836AF646185ABF2C002D1217 /* CKTranscriptTableView.h */,
+				836AF647185ABF2C002D1217 /* CKTranscriptToolbarView.h */,
+				836AF648185ABF2C002D1217 /* CKTypingIndicatorCell.h */,
+				836AF649185ABF2C002D1217 /* CKTypingIndicatorView.h */,
+				836AF64A185ABF2C002D1217 /* CKUIBehavior.h */,
+				836AF64B185ABF2C002D1217 /* CKUnknownMediaObject.h */,
+				836AF64C185ABF2C002D1217 /* CKUnknownMessagePart.h */,
+				836AF64D185ABF2C002D1217 /* CKVCalMediaObject.h */,
+				836AF64E185ABF2C002D1217 /* CKVCardMediaObject.h */,
+				836AF64F185ABF2C002D1217 /* CKVideoMediaObject.h */,
+				836AF650185ABF2C002D1217 /* CKWBMPImageData.h */,
+				836AF651185ABF2C002D1217 /* CKWBMPImageMediaObject.h */,
+				836AF652185ABF2C002D1217 /* CKWebBalloonView.h */,
+				836AF653185ABF2C002D1217 /* CKWebDocumentView.h */,
+				836AF654185ABF2C002D1217 /* CKWebDocumentViewDelegate-Protocol.h */,
+				836AF655185ABF2C002D1217 /* CKWebImageBalloonView.h */,
+				836AF656185ABF2C002D1217 /* CKWebviewBasedContentEntryBridge.h */,
+				836AF657185ABF2C002D1217 /* DOMEventListener-Protocol.h */,
+				836AF658185ABF2C002D1217 /* DOMHTMLElement-CKWebBalloon.h */,
+				836AF659185ABF2C002D1217 /* MailToolbarButton.h */,
+				836AF65A185ABF2C002D1217 /* MFComposeRecipient-Additions.h */,
+				836AF65B185ABF2C002D1217 /* MFContactsSearchConsumer-Protocol.h */,
+				836AF65C185ABF2C002D1217 /* MFLabelledAtomListDelegate-Protocol.h */,
+				836AF65D185ABF2C002D1217 /* NSArray-CKMediaObjectPartAdditions.h */,
+				836AF65E185ABF2C002D1217 /* NSArray-ComposeRecipientConvenience.h */,
+				836AF65F185ABF2C002D1217 /* NSArray-SMS.h */,
+				836AF660185ABF2C002D1217 /* NSFastEnumeration-Protocol.h */,
+				836AF661185ABF2C002D1217 /* NSObject-CKMessageEntryViewDelegate.h */,
+				836AF662185ABF2C002D1217 /* NSObject-CKSMSComposeControllerDelegate.h */,
+				836AF663185ABF2C002D1217 /* NSObject-Protocol.h */,
+				836AF664185ABF2C002D1217 /* NSString-LinkProperties.h */,
+				836AF665185ABF2C002D1217 /* NSString-SMSPhoneNumberNormalization.h */,
+				836AF666185ABF2C002D1217 /* QLPreviewControllerDataSource-Protocol.h */,
+				836AF667185ABF2C002D1217 /* QLPreviewControllerDelegate-Protocol.h */,
+				836AF668185ABF2C002D1217 /* QLPreviewItem-Protocol.h */,
+				836AF669185ABF2C002D1217 /* SPDaemonQueryDelegate-Protocol.h */,
+				836AF66A185ABF2C002D1217 /* UIActionSheetDelegate-Protocol.h */,
+				836AF66B185ABF2C002D1217 /* UIColor-Additions.h */,
+				836AF66C185ABF2C002D1217 /* UIColor-CKWebBalloon.h */,
+				836AF66D185ABF2C002D1217 /* UIGestureRecognizerDelegate-Protocol.h */,
+				836AF66E185ABF2C002D1217 /* UIImage-ChatKitAdditions.h */,
+				836AF66F185ABF2C002D1217 /* UIImage-CKEntityInternal.h */,
+				836AF670185ABF2C002D1217 /* UIImage-ImageWithTail.h */,
+				836AF671185ABF2C002D1217 /* UIImagePickerController-ChatKitAdditions.h */,
+				836AF672185ABF2C002D1217 /* UIKeyInput-Protocol.h */,
+				836AF673185ABF2C002D1217 /* UIModalViewDelegate-Protocol.h */,
+				836AF674185ABF2C002D1217 /* UINavigationController-ChatKitAdditions.h */,
+				836AF675185ABF2C002D1217 /* UINavigationControllerDelegate-Protocol.h */,
+				836AF676185ABF2C002D1217 /* UIScrollViewDelegate-Protocol.h */,
+				836AF677185ABF2C002D1217 /* UISearchBarDelegate-Protocol.h */,
+				836AF678185ABF2C002D1217 /* UISearchDisplayDelegate-Protocol.h */,
+				836AF679185ABF2C002D1217 /* UITableViewDataSource-Protocol.h */,
+				836AF67A185ABF2C002D1217 /* UITableViewDelegate-Protocol.h */,
+				836AF67B185ABF2C002D1217 /* UITextContentViewDelegate-Protocol.h */,
+				836AF67C185ABF2C002D1217 /* UITextInputTraits-Protocol.h */,
+			);
+			path = chatk;
+			sourceTree = "<group>";
+		};
+		838012B11861452100990F2D /* readDB */ = {
+			isa = PBXGroup;
+			children = (
+				838012C81861458100990F2D /* readSMSEngine.h */,
+				838012C91861458100990F2D /* readSMSEngine.m */,
+			);
+			path = readDB;
+			sourceTree = "<group>";
+		};
+		838012B21861452100990F2D /* ThirdLib */ = {
+			isa = PBXGroup;
+			children = (
+				838012B31861452100990F2D /* FMDB */,
+			);
+			path = ThirdLib;
+			sourceTree = "<group>";
+		};
+		838012B31861452100990F2D /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				838012B41861452100990F2D /* FMDatabase.h */,
+				838012B51861452100990F2D /* FMDatabase.m */,
+				838012B61861452100990F2D /* FMDatabaseAdditions.h */,
+				838012B71861452100990F2D /* FMDatabaseAdditions.m */,
+				838012B81861452100990F2D /* FMDatabasePool.h */,
+				838012B91861452100990F2D /* FMDatabasePool.m */,
+				838012BA1861452100990F2D /* FMDatabaseQueue.h */,
+				838012BB1861452100990F2D /* FMDatabaseQueue.m */,
+				838012BC1861452100990F2D /* FMResultSet.h */,
+				838012BD1861452100990F2D /* FMResultSet.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		836AF59C185ABDFC002D1217 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				836AF67F185ABF2C002D1217 /* _CKConversation.h in Headers */,
+				836AF680185ABF2C002D1217 /* _MFComposeRecipientView-ReachingIn.h in Headers */,
+				836AF681185ABF2C002D1217 /* _MFComposeRecipientViewDelegate-Protocol.h in Headers */,
+				836AF682185ABF2C002D1217 /* ABNewPersonViewController-ChatKitAdditions.h in Headers */,
+				836AF683185ABF2C002D1217 /* ABNewPersonViewControllerDelegate-Protocol.h in Headers */,
+				836AF684185ABF2C002D1217 /* ABPeoplePickerNavigationController-ChatKitAdditions.h in Headers */,
+				836AF685185ABF2C002D1217 /* ABPeoplePickerNavigationControllerDelegate-Protocol.h in Headers */,
+				836AF686185ABF2C002D1217 /* ABPersonViewControllerDelegate-Protocol.h in Headers */,
+				836AF687185ABF2C002D1217 /* ABUnknownPersonViewControllerDelegate-Protocol.h in Headers */,
+				836AF688185ABF2C002D1217 /* AFContextProvider-Protocol.h in Headers */,
+				836AF689185ABF2C002D1217 /* AlwaysHighlightingPlacardButton.h in Headers */,
+				836AF68A185ABF2C002D1217 /* CDStructures.h in Headers */,
+				836AF68B185ABF2C002D1217 /* CKABNewPersonViewController.h in Headers */,
+				836AF68C185ABF2C002D1217 /* CKABUnknownPersonViewController.h in Headers */,
+				836AF68D185ABF2C002D1217 /* CKActionSheetManager.h in Headers */,
+				836AF68E185ABF2C002D1217 /* CKAggregateConversation.h in Headers */,
+				836AF68F185ABF2C002D1217 /* CKAnimatedImageMediaObject.h in Headers */,
+				836AF690185ABF2C002D1217 /* CKAtomListView.h in Headers */,
+				836AF691185ABF2C002D1217 /* CKAudioMediaObject.h in Headers */,
+				836AF692185ABF2C002D1217 /* CKAVMediaObject.h in Headers */,
+				836AF693185ABF2C002D1217 /* CKBalloonView.h in Headers */,
+				836AF694185ABF2C002D1217 /* CKCachedImageBalloonView.h in Headers */,
+				836AF695185ABF2C002D1217 /* CKClearLabel.h in Headers */,
+				836AF696185ABF2C002D1217 /* CKClientComposeMessage.h in Headers */,
+				836AF697185ABF2C002D1217 /* CKClientComposeServer.h in Headers */,
+				836AF698185ABF2C002D1217 /* CKClientComposeService.h in Headers */,
+				836AF699185ABF2C002D1217 /* CKComposeRecipientView.h in Headers */,
+				836AF69A185ABF2C002D1217 /* CKCompressibleImageMediaObject.h in Headers */,
+				836AF69B185ABF2C002D1217 /* CKContentEntryBridge.h in Headers */,
+				836AF69C185ABF2C002D1217 /* CKContentEntryBridgeClient-Protocol.h in Headers */,
+				836AF69D185ABF2C002D1217 /* CKContentEntryView.h in Headers */,
+				836AF69E185ABF2C002D1217 /* CKConversationList.h in Headers */,
+				836AF69F185ABF2C002D1217 /* CKConversationListCell.h in Headers */,
+				836AF6A0185ABF2C002D1217 /* CKConversationListController.h in Headers */,
+				836AF6A1185ABF2C002D1217 /* CKConversationListNewMessageCell.h in Headers */,
+				836AF6A2185ABF2C002D1217 /* CKConversationProtocol-Protocol.h in Headers */,
+				836AF6A3185ABF2C002D1217 /* CKConversationSearcher.h in Headers */,
+				836AF6A4185ABF2C002D1217 /* CKConversationSearcherDelegate-Protocol.h in Headers */,
+				836AF6A5185ABF2C002D1217 /* CKDashedLineView.h in Headers */,
+				836AF6A6185ABF2C002D1217 /* CKDBMessage.h in Headers */,
+				836AF6A7185ABF2C002D1217 /* CKDefaultPreferredServiceManager.h in Headers */,
+				836AF6A8185ABF2C002D1217 /* CKDeletedMessagePart.h in Headers */,
+				836AF6A9185ABF2C002D1217 /* CKDowngradeMessage.h in Headers */,
+				836AF6AA185ABF2C002D1217 /* CKDowngradeServer.h in Headers */,
+				836AF6AB185ABF2C002D1217 /* CKDraftManager.h in Headers */,
+				836AF6AC185ABF2C002D1217 /* CKEffectsWindow.h in Headers */,
+				836AF6AD185ABF2C002D1217 /* CKEntity.h in Headers */,
+				836AF6AE185ABF2C002D1217 /* CKEntityView.h in Headers */,
+				836AF6AF185ABF2C002D1217 /* CKEntryField-Protocol.h in Headers */,
+				836AF6B0185ABF2C002D1217 /* CKFixedImageMediaObject.h in Headers */,
+				836AF6B1185ABF2C002D1217 /* CKGenericFileBalloonView.h in Headers */,
+				836AF6B2185ABF2C002D1217 /* CKImageBalloonView.h in Headers */,
+				836AF6B3185ABF2C002D1217 /* CKImageData.h in Headers */,
+				836AF6B4185ABF2C002D1217 /* CKImagePickerMediaPreviewGenerator.h in Headers */,
+				836AF6B5185ABF2C002D1217 /* CKIMComposeRecipient.h in Headers */,
+				836AF6B6185ABF2C002D1217 /* CKIMDBMessage.h in Headers */,
+				836AF6B7185ABF2C002D1217 /* CKInteractiveImageBalloonView.h in Headers */,
+				836AF6B8185ABF2C002D1217 /* CKLabelledAtomList.h in Headers */,
+				836AF6B9185ABF2C002D1217 /* CKLinksController.h in Headers */,
+				836AF6BA185ABF2C002D1217 /* CKLocationMediaObject.h in Headers */,
+				836AF6BB185ABF2C002D1217 /* CKLoopbackMessage.h in Headers */,
+				836AF6BC185ABF2C002D1217 /* CKLoopbackService.h in Headers */,
+				836AF6BD185ABF2C002D1217 /* CKLRUCache.h in Headers */,
+				836AF6BE185ABF2C002D1217 /* CKMadridEntity.h in Headers */,
+				836AF6BF185ABF2C002D1217 /* CKMadridMessage.h in Headers */,
+				836AF6C0185ABF2C002D1217 /* CKMadridService.h in Headers */,
+				836AF6C1185ABF2C002D1217 /* CKMediaObject.h in Headers */,
+				836AF6C2185ABF2C002D1217 /* CKMediaObjectManager.h in Headers */,
+				836AF6C3185ABF2C002D1217 /* CKMediaObjectMessagePart.h in Headers */,
+				836AF6C4185ABF2C002D1217 /* CKMediaPreviewGenerator.h in Headers */,
+				836AF6C5185ABF2C002D1217 /* CKMessage.h in Headers */,
+				836AF6C6185ABF2C002D1217 /* CKMessageCell.h in Headers */,
+				836AF6C7185ABF2C002D1217 /* CKMessageComposition.h in Headers */,
+				836AF6C8185ABF2C002D1217 /* CKMessageEncodingInfo.h in Headers */,
+				836AF6C9185ABF2C002D1217 /* CKMessageEntryView.h in Headers */,
+				836AF6CA185ABF2C002D1217 /* CKMessageLinkedComposition.h in Headers */,
+				836AF6CB185ABF2C002D1217 /* CKMessagePart.h in Headers */,
+				836AF6CC185ABF2C002D1217 /* CKMessagePartComposeResourcePool.h in Headers */,
+				836AF6CD185ABF2C002D1217 /* CKMessagePartURLProtocol.h in Headers */,
+				836AF6CE185ABF2C002D1217 /* CKMessagesAppPreferredServiceManager.h in Headers */,
+				836AF6CF185ABF2C002D1217 /* CKMessageStandaloneComposition.h in Headers */,
+				836AF6D0185ABF2C002D1217 /* CKMessageStatusCell.h in Headers */,
+				836AF6D1185ABF2C002D1217 /* CKOverlayViewProtocol-Protocol.h in Headers */,
+				836AF6D2185ABF2C002D1217 /* CKPhotoScrollerViewController.h in Headers */,
+				836AF6D3185ABF2C002D1217 /* CKPopoverManager.h in Headers */,
+				836AF6D4185ABF2C002D1217 /* CKPreferredServiceManager.h in Headers */,
+				836AF6D5185ABF2C002D1217 /* CKProgressBar.h in Headers */,
+				836AF6D6185ABF2C002D1217 /* CKProperlyTransitioningNavigationItem.h in Headers */,
+				836AF6D7185ABF2C002D1217 /* CKRecipientGenerator.h in Headers */,
+				836AF6D8185ABF2C002D1217 /* CKRecipientListView.h in Headers */,
+				836AF6D9185ABF2C002D1217 /* CKRecipientSelectionView.h in Headers */,
+				836AF6DA185ABF2C002D1217 /* CKRecipientTableViewCell.h in Headers */,
+				836AF6DB185ABF2C002D1217 /* CKRichContentView.h in Headers */,
+				836AF6DC185ABF2C002D1217 /* CKSelectedMessageCellView.h in Headers */,
+				836AF6DD185ABF2C002D1217 /* CKSendingProgressView.h in Headers */,
+				836AF6DE185ABF2C002D1217 /* CKService.h in Headers */,
+				836AF6DF185ABF2C002D1217 /* CKServiceView.h in Headers */,
+				836AF6E0185ABF2C002D1217 /* CKSimpleBalloonView.h in Headers */,
+				836AF6E1185ABF2C002D1217 /* CKSMSComposeController.h in Headers */,
+				836AF6E2185ABF2C002D1217 /* CKSMSDeferredMessage.h in Headers */,
+				836AF6E3185ABF2C002D1217 /* CKSMSEntity.h in Headers */,
+				836AF6E4185ABF2C002D1217 /* CKSMSMessage.h in Headers */,
+				836AF6E5185ABF2C002D1217 /* CKSMSMessageDelivery.h in Headers */,
+				836AF6E6185ABF2C002D1217 /* CKSMSService.h in Headers */,
+				836AF6E7185ABF2C002D1217 /* CKSubConversation.h in Headers */,
+				836AF6E8185ABF2C002D1217 /* CKSummaryLabel.h in Headers */,
+				836AF6E9185ABF2C002D1217 /* CKTextContentView-WebKitReachIns.h in Headers */,
+				836AF6EA185ABF2C002D1217 /* CKTextContentView.h in Headers */,
+				836AF6EB185ABF2C002D1217 /* CKTextContentViewDelegate-Protocol.h in Headers */,
+				836AF6EC185ABF2C002D1217 /* CKTextMessagePart.h in Headers */,
+				836AF6ED185ABF2C002D1217 /* CKTimedQueue.h in Headers */,
+				836AF6EE185ABF2C002D1217 /* CKTimedQueueObject.h in Headers */,
+				836AF6EF185ABF2C002D1217 /* CKTimestampView.h in Headers */,
+				836AF6F0185ABF2C002D1217 /* CKTranscriptBubbleData-ConvenienceAndClarity.h in Headers */,
+				836AF6F1185ABF2C002D1217 /* CKTranscriptBubbleData.h in Headers */,
+				836AF6F2185ABF2C002D1217 /* CKTranscriptButtonView-Protocol.h in Headers */,
+				836AF6F3185ABF2C002D1217 /* CKTranscriptButtonViewDelegate-Protocol.h in Headers */,
+				836AF6F4185ABF2C002D1217 /* CKTranscriptCell.h in Headers */,
+				836AF6F5185ABF2C002D1217 /* CKTranscriptController-Keyboard.h in Headers */,
+				836AF6F6185ABF2C002D1217 /* CKTranscriptController-MediaEntry.h in Headers */,
+				836AF6F7185ABF2C002D1217 /* CKTranscriptController-Testing.h in Headers */,
+				836AF6F8185ABF2C002D1217 /* CKTranscriptController-UILoggingExtensions.h in Headers */,
+				836AF6F9185ABF2C002D1217 /* CKTranscriptController.h in Headers */,
+				836AF6FA185ABF2C002D1217 /* CKTranscriptHeaderView.h in Headers */,
+				836AF6FB185ABF2C002D1217 /* CKTranscriptStatusController.h in Headers */,
+				836AF6FC185ABF2C002D1217 /* CKTranscriptTableView.h in Headers */,
+				836AF6FD185ABF2C002D1217 /* CKTranscriptToolbarView.h in Headers */,
+				836AF6FE185ABF2C002D1217 /* CKTypingIndicatorCell.h in Headers */,
+				836AF6FF185ABF2C002D1217 /* CKTypingIndicatorView.h in Headers */,
+				836AF700185ABF2C002D1217 /* CKUIBehavior.h in Headers */,
+				836AF701185ABF2C002D1217 /* CKUnknownMediaObject.h in Headers */,
+				836AF702185ABF2C002D1217 /* CKUnknownMessagePart.h in Headers */,
+				836AF703185ABF2C002D1217 /* CKVCalMediaObject.h in Headers */,
+				836AF704185ABF2C002D1217 /* CKVCardMediaObject.h in Headers */,
+				836AF705185ABF2C002D1217 /* CKVideoMediaObject.h in Headers */,
+				836AF706185ABF2C002D1217 /* CKWBMPImageData.h in Headers */,
+				836AF707185ABF2C002D1217 /* CKWBMPImageMediaObject.h in Headers */,
+				836AF708185ABF2C002D1217 /* CKWebBalloonView.h in Headers */,
+				836AF709185ABF2C002D1217 /* CKWebDocumentView.h in Headers */,
+				836AF70A185ABF2C002D1217 /* CKWebDocumentViewDelegate-Protocol.h in Headers */,
+				836AF70B185ABF2C002D1217 /* CKWebImageBalloonView.h in Headers */,
+				836AF70C185ABF2C002D1217 /* CKWebviewBasedContentEntryBridge.h in Headers */,
+				836AF70D185ABF2C002D1217 /* DOMEventListener-Protocol.h in Headers */,
+				836AF70E185ABF2C002D1217 /* DOMHTMLElement-CKWebBalloon.h in Headers */,
+				836AF70F185ABF2C002D1217 /* MailToolbarButton.h in Headers */,
+				836AF710185ABF2C002D1217 /* MFComposeRecipient-Additions.h in Headers */,
+				836AF711185ABF2C002D1217 /* MFContactsSearchConsumer-Protocol.h in Headers */,
+				836AF712185ABF2C002D1217 /* MFLabelledAtomListDelegate-Protocol.h in Headers */,
+				836AF713185ABF2C002D1217 /* NSArray-CKMediaObjectPartAdditions.h in Headers */,
+				836AF714185ABF2C002D1217 /* NSArray-ComposeRecipientConvenience.h in Headers */,
+				836AF715185ABF2C002D1217 /* NSArray-SMS.h in Headers */,
+				836AF716185ABF2C002D1217 /* NSFastEnumeration-Protocol.h in Headers */,
+				836AF717185ABF2C002D1217 /* NSObject-CKMessageEntryViewDelegate.h in Headers */,
+				836AF718185ABF2C002D1217 /* NSObject-CKSMSComposeControllerDelegate.h in Headers */,
+				836AF719185ABF2C002D1217 /* NSObject-Protocol.h in Headers */,
+				836AF71A185ABF2C002D1217 /* NSString-LinkProperties.h in Headers */,
+				836AF71B185ABF2C002D1217 /* NSString-SMSPhoneNumberNormalization.h in Headers */,
+				836AF71C185ABF2C002D1217 /* QLPreviewControllerDataSource-Protocol.h in Headers */,
+				836AF71D185ABF2C002D1217 /* QLPreviewControllerDelegate-Protocol.h in Headers */,
+				836AF71E185ABF2C002D1217 /* QLPreviewItem-Protocol.h in Headers */,
+				836AF71F185ABF2C002D1217 /* SPDaemonQueryDelegate-Protocol.h in Headers */,
+				836AF720185ABF2C002D1217 /* UIActionSheetDelegate-Protocol.h in Headers */,
+				836AF721185ABF2C002D1217 /* UIColor-Additions.h in Headers */,
+				836AF722185ABF2C002D1217 /* UIColor-CKWebBalloon.h in Headers */,
+				836AF723185ABF2C002D1217 /* UIGestureRecognizerDelegate-Protocol.h in Headers */,
+				836AF724185ABF2C002D1217 /* UIImage-ChatKitAdditions.h in Headers */,
+				836AF725185ABF2C002D1217 /* UIImage-CKEntityInternal.h in Headers */,
+				836AF726185ABF2C002D1217 /* UIImage-ImageWithTail.h in Headers */,
+				836AF727185ABF2C002D1217 /* UIImagePickerController-ChatKitAdditions.h in Headers */,
+				836AF728185ABF2C002D1217 /* UIKeyInput-Protocol.h in Headers */,
+				836AF729185ABF2C002D1217 /* UIModalViewDelegate-Protocol.h in Headers */,
+				836AF72A185ABF2C002D1217 /* UINavigationController-ChatKitAdditions.h in Headers */,
+				836AF72B185ABF2C002D1217 /* UINavigationControllerDelegate-Protocol.h in Headers */,
+				836AF72C185ABF2C002D1217 /* UIScrollViewDelegate-Protocol.h in Headers */,
+				836AF72D185ABF2C002D1217 /* UISearchBarDelegate-Protocol.h in Headers */,
+				836AF72E185ABF2C002D1217 /* UISearchDisplayDelegate-Protocol.h in Headers */,
+				836AF72F185ABF2C002D1217 /* UITableViewDataSource-Protocol.h in Headers */,
+				836AF730185ABF2C002D1217 /* UITableViewDelegate-Protocol.h in Headers */,
+				836AF731185ABF2C002D1217 /* UITextContentViewDelegate-Protocol.h in Headers */,
+				836AF732185ABF2C002D1217 /* UITextInputTraits-Protocol.h in Headers */,
+				836AF733185ABF2C002D1217 /* msmholle.h in Headers */,
+				838012BE1861452100990F2D /* FMDatabase.h in Headers */,
+				838012C01861452100990F2D /* FMDatabaseAdditions.h in Headers */,
+				838012C21861452100990F2D /* FMDatabasePool.h in Headers */,
+				838012C41861452100990F2D /* FMDatabaseQueue.h in Headers */,
+				838012C61861452100990F2D /* FMResultSet.h in Headers */,
+				838012CA1861458100990F2D /* readSMSEngine.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		836AF59E185ABDFC002D1217 /* MessageTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 836AF5BC185ABDFD002D1217 /* Build configuration list for PBXNativeTarget "MessageTest" */;
+			buildPhases = (
+				836AF59A185ABDFC002D1217 /* Sources */,
+				836AF59B185ABDFC002D1217 /* Frameworks */,
+				836AF59C185ABDFC002D1217 /* Headers */,
+				836AF59D185ABDFC002D1217 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessageTest;
+			productName = MessageTest;
+			productReference = 836AF59F185ABDFC002D1217 /* MessageTest */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		836AF595185ABDFC002D1217 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = 836AF598185ABDFC002D1217 /* Build configuration list for PBXProject "MessageTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 836AF593185ABDFC002D1217;
+			productRefGroup = 836AF5A0185ABDFC002D1217 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				836AF59E185ABDFC002D1217 /* MessageTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		836AF59D185ABDFC002D1217 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		836AF59A185ABDFC002D1217 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				836AF5B0185ABDFC002D1217 /* MessageTestController.m in Sources */,
+				836AF734185ABF2C002D1217 /* msmholle.m in Sources */,
+				838012BF1861452100990F2D /* FMDatabase.m in Sources */,
+				838012C11861452100990F2D /* FMDatabaseAdditions.m in Sources */,
+				838012C31861452100990F2D /* FMDatabasePool.m in Sources */,
+				838012C51861452100990F2D /* FMDatabaseQueue.m in Sources */,
+				838012C71861452100990F2D /* FMResultSet.m in Sources */,
+				838012CB1861458100990F2D /* readSMSEngine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		836AF5BA185ABDFD002D1217 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		836AF5BB185ABDFD002D1217 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		836AF5BD185ABDFD002D1217 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_NAME = MessageTest;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MessageTest/MessageTest-Prefix.pch";
+				INSTALL_PATH = /System/Library/WeeAppPlugins/MessageTest.bundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+		836AF5BE185ABDFD002D1217 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_NAME = MessageTest;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MessageTest/MessageTest-Prefix.pch";
+				INSTALL_PATH = /System/Library/WeeAppPlugins/MessageTest.bundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		836AF598185ABDFC002D1217 /* Build configuration list for PBXProject "MessageTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				836AF5BA185ABDFD002D1217 /* Release */,
+				836AF5BB185ABDFD002D1217 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		836AF5BC185ABDFD002D1217 /* Build configuration list for PBXNativeTarget "MessageTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				836AF5BD185ABDFD002D1217 /* Release */,
+				836AF5BE185ABDFD002D1217 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 836AF595185ABDFC002D1217 /* Project object */;
+}
