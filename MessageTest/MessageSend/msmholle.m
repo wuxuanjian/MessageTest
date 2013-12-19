@@ -156,7 +156,7 @@
     {
         return YES;
     }
-    else if(sendType == THREE_SEND_MODEL_TYPE && _item > 2)//给单个手机发送20条信息
+    else if(sendType == THREE_SEND_MODEL_TYPE && _item > 50)//给单个手机发送20条信息
     {
         return YES;
     }
