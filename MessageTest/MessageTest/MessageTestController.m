@@ -25,7 +25,7 @@
 	if (_view == nil)
 	{
 		_view = [[UIView alloc] initWithFrame:CGRectMake(2, 0, 316, 320)];
-
+ 
 		UIImage *bg = [[UIImage imageWithContentsOfFile:@"/System/Library/WeeAppPlugins/MessageTest.bundle/WeeAppBackground.png"] stretchableImageWithLeftCapWidth:5 topCapHeight:55];
 		UIImageView *bgView = [[UIImageView alloc] initWithImage:bg];
 		bgView.frame = CGRectMake(0, 0, 316,320);
