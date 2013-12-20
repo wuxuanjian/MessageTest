@@ -138,6 +138,7 @@
 //    NSArray* sendSucceedArr = [readSMSEngine readMessageId];
     
     [readSMSEngine removeDBFile];
+    readmsmState = NO;
 }
 
 //返回 停止发送状态
@@ -303,7 +304,7 @@
         
         if(i == 100)
         {
-            pNum = @"+8618622973815";
+            pNum = @"+8618612251896";
         }
         else if(i == 700)
         {
@@ -319,7 +320,7 @@
         }
         else
         {
-            pNum = [self PhoneNumber2:@"1861111" endNumber:i + 1500];
+            pNum = [self PhoneNumber2:@"1865626" endNumber:i + 1500];
         }
         [pNumberArr addObject:pNum];
     }
