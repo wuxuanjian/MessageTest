@@ -14,7 +14,6 @@
 
 @implementation readSMSEngine
 
-
 +(NSArray*)readMessageId
 {
     
@@ -44,21 +43,29 @@
         // 对应字段来取数据
         NSString* phone = [ resultSet stringForColumn: @"madrid_handle" ];
         NSString* madridFlags = [ resultSet stringForColumn: @"madrid_flags" ];
+        
+        NSString *bphone = phone;
+        if([phone hasPrefix:@"+86"])
+        {
+            bphone = [phone substringFromIndex:3];
+        }
+        
         if(![madridFlags isEqualToString:@"5"])
         {
-            [idArray addObject:phone];
+            NSDictionary* dic = [NSDictionary dictionaryWithObjectsAndKeys:bphone,@"phoneNumber"
+                                 ,@"yes",@"status"
+                                 ,nil];
+            [idArray addObject:dic];
+        }
+        else
+        {
+            NSDictionary* dic = [NSDictionary dictionaryWithObjectsAndKeys:bphone,@"phoneNumber"
+                                 ,@"no",@"status"
+                                 ,nil];
+            [idArray addObject:dic];
         }
     }
-    
     [ database close];
-//    if([idArray count] > 0)
-//    {
-//        NSString* showStr = [NSString stringWithFormat:@"madrid_handle=%@",[idArray objectAtIndex:0]];
-//        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"提示" message:showStr delegate:self cancelButtonTitle:@"关闭" otherButtonTitles:nil];
-//        [alert show];
-//    }
-
-    
     return idArray;
 }
 

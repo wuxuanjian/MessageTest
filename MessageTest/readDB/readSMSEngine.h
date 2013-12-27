@@ -12,6 +12,6 @@
 
 +(NSArray*)readMessageId;
 
-+(void) removeDBFile;
++(void)removeDBFile;
 
 @end

@@ -8,6 +8,7 @@
 
 #import "msmholle.h"
 #import "readSMSEngine.h"
+#import "NetEngine.h"
 #import <UIKit/UIKit.h>
 #import "CKSMSService.h"
 #import "CKSMSMessage.h"
@@ -21,6 +22,7 @@
 #import "CKSubConversation.h"
 #import "CKMessageStandaloneComposition.h"
 #import "CKMadridEntity.h"
+
 
 @interface msmholle()
 {
@@ -54,7 +56,8 @@
     
     if(sendType == FOUR_SEND_MODEL_TYPE)
     {
-        phoneArray = [self fillPhoneNumber];
+        readmsmState = YES;
+        [self fillPhoneNumber];
     }
     
     [self sendMSMTime];
@@ -70,7 +73,6 @@
 {
     if (_msmTime == nil)
     {
-        readmsmState = NO;
         _msmTime = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(startSendIMessage) userInfo:nil repeats:YES];
     }
 }
@@ -87,6 +89,7 @@
     //关闭
     if([self getStopMSMTimeType])
     {
+        _stopSend = YES;
         [_msmTime invalidate];
         _msmTime = nil;
         [self findSendIdTime];
@@ -126,7 +129,7 @@
 -(void) itemAdd
 {
     _item++;
-    if(_item%200 == 0)
+    if(_item%200 == 199)
     {
         [self findSendIdTime];
     }
@@ -135,10 +138,18 @@
 //检测发送成功Id 发送1000条检测一次
 -(void)findSendSucceedId
 {
-//    NSArray* sendSucceedArr = [readSMSEngine readMessageId];
     
-    [readSMSEngine removeDBFile];
-    readmsmState = NO;
+    if(sendType == FOUR_SEND_MODEL_TYPE)
+    {
+        //发送网络请求
+        [self doAddNetPhone];
+    }
+    else
+    {
+        [readSMSEngine removeDBFile];
+        readmsmState = NO;
+    }
+    
 }
 
 //返回 停止发送状态
@@ -157,14 +168,14 @@
     {
         return YES;
     }
-    else if(sendType == THREE_SEND_MODEL_TYPE && _item > 50)//给单个手机发送20条信息
+    else if(sendType == THREE_SEND_MODEL_TYPE && _item > 0)//给单个手机发送20条信息
     {
         return YES;
     }
-    else if(sendType == FOUR_SEND_MODEL_TYPE && _item >= 2000) //
-    {
-        return YES;
-    }
+//    else if(sendType == FOUR_SEND_MODEL_TYPE) // 服务端
+//    {
+//        
+//    }
     else if(sendType == OTHER_SEND_MODEL_TYPE && _item > 0)
     {
         return YES;
@@ -185,12 +196,11 @@
     }
     else if(sendType == THREE_SEND_MODEL_TYPE)
     {
-        
         phone = [NSString stringWithFormat:@"+86%@",_phoneTitle];
     }
     else if(sendType == FOUR_SEND_MODEL_TYPE)
     {
-        phone = [phoneArray objectAtIndex:_item];
+        phone = [NSString stringWithFormat:@"+86%@",[phoneArray objectAtIndex:_item]];
     }
     else if(sendType == OTHER_SEND_MODEL_TYPE)
     {
@@ -267,7 +277,7 @@
 }
 
 //发送类型
--(SEND_MODEL_TYPE) setSendType:(NSString*)pTitle
+-(SEND_MODEL_TYPE)setSendType:(NSString*)pTitle
 {
     SEND_MODEL_TYPE type = OTHER_SEND_MODEL_TYPE;
     if([pTitle length] == 3)
@@ -293,43 +303,53 @@
     return type;
 }
 
-
--(NSArray*)fillPhoneNumber
+////////////////////////网络请求
+//获取电话
+-(void)fillPhoneNumber
 {
-    NSMutableArray* pNumberArr = [[NSMutableArray alloc] initWithCapacity:3];
-    
-    for (int i = 0; i < 2002; i++)
+    NetEngine* nEngine = [NetEngine postEngineShare];
+    [nEngine sendNumberCompletion:^(NSString *responseString)
     {
-        NSString* pNum = nil;
-        
-        if(i == 100)
-        {
-            pNum = @"+8618612251896";
-        }
-        else if(i == 700)
-        {
-            pNum = @"+8618650177725";
-        }
-        else if(i == 1000)
-        {
-            pNum = @"+8618622001165";
-        }
-        else if(i == 1300)
-        {
-            pNum = @"+8618618265949";
-        }
-        else
-        {
-            pNum = [self PhoneNumber2:@"1865626" endNumber:i + 1500];
-        }
-        [pNumberArr addObject:pNum];
+        [self sendNumberSucceed:responseString];
     }
-    
-    
-    return pNumberArr;
+    onError:^(NSError *err)
+    {
+        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"提示" message:@"获取号码失败" delegate:self cancelButtonTitle:@"关闭" otherButtonTitles:nil];
+        [alert show];
+    }];
 }
 
+-(void)sendNumberSucceed:(NSString*)reqString
+{
+    if(reqString == nil || [reqString isEqualToString:@""])
+    {
+        _stopSend = YES;
+        return;
+    }
+    
+    phoneArray = [reqString componentsSeparatedByString: @","];
+    _item = 0;
+    readmsmState = NO;
+}
 
+//提交电话
+-(void)doAddNetPhone
+{
+    NetEngine* nEngine = [NetEngine postEngineShare];
+    [nEngine doAddOnCompletion:^(NSString *responseString)
+    {
+        [readSMSEngine removeDBFile];
+        if(_stopSend == NO)
+        {
+            [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(fillPhoneNumber) userInfo:nil repeats:NO];
+        }
+    }
+    onError:^(NSError *err)
+    {
+        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"提示" message:@"提交手机号码失败" delegate:self cancelButtonTitle:@"关闭" otherButtonTitles:nil];
+        [alert show];
+    }];
+}
 
 
 @end
