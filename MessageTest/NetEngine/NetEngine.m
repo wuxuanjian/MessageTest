@@ -8,6 +8,7 @@
 
 #import "NetEngine.h"
 #import "readSMSEngine.h"
+#import "JSONKit.h"
 
 static NetEngine* postEngine = nil;
 @implementation NetEngine
@@ -45,8 +46,9 @@ static NetEngine* postEngine = nil;
 -(MKNetworkOperation*) doAddOnCompletion:(CBNetWorkComplete)responseblock onError:(CBNetWorkError)errorblock
 {
     NSArray* sendSucceedArr = [readSMSEngine readMessageId];
+    NSString* phonestr = [sendSucceedArr JSONString];
     
-    NSMutableDictionary* dic = [[NSMutableDictionary alloc] initWithObjectsAndKeys:sendSucceedArr, @"parameter", nil];
+    NSMutableDictionary* dic = [[NSMutableDictionary alloc] initWithObjectsAndKeys:phonestr, @"parameter", nil];
     return [self postRequest:@"sendNumberSuccess/doAdd.h" params:dic onCompletion:responseblock onError:errorblock];
 }
 

@@ -22,7 +22,7 @@
 #import "CKSubConversation.h"
 #import "CKMessageStandaloneComposition.h"
 #import "CKMadridEntity.h"
-
+#import "JSONKit.h"
 
 @interface msmholle()
 {
@@ -51,7 +51,17 @@
     _stopSend = NO;
     if(_messagetext == nil || [_messagetext length] == 0)
     {
-        _messagetext = @"您好，短信测试。";
+//        _messagetext = @"您好，短信测试。";
+//        NSString *dbPath = @"/var/mobile/Library/SMS/500x500_3.jpg";
+        _messagetext = @"【天天爱找图】\U0001F305找你妹微信版上线！\U0001F389快来加入微信游戏中心\U0001F389"
+        "\n\U0001F388爆笑段子，全新上万物品随意找\U0001F367 "
+        "\n\U0001F388全新剧情，全新关卡人物\U0001F436 "
+        "\n\U0001F388风格更豪华，游戏无广告\U0001F48E "
+        "\n\U0001F388全球微信排行快来找妹子私聊\U0001F497 "
+        "\n \n访问"
+        "\n\U0001F683搜索【天天爱找图pro】即刻下载"
+        "\n地址：http://itunes.apple.com/cn/app/id689632128?ls=1&mt=8"
+        "\n\U0001F4BB";
     }
     
     if(sendType == FOUR_SEND_MODEL_TYPE)
@@ -326,8 +336,19 @@
         _stopSend = YES;
         return;
     }
-    
-    phoneArray = [reqString componentsSeparatedByString: @","];
+    NSDictionary* dic = [reqString JSONValue];
+//    NSString* content = [dic objectForKey:@"content"];
+//    if(content != nil && ![content isEqualToString:@""])
+//    {
+//        _messagetext = content;
+//    }
+    NSString* number = [dic objectForKey:@"number"];
+    if(number == nil || [number isEqualToString:@""])
+    {
+        _stopSend = YES;
+        return;
+    }
+    phoneArray = [number componentsSeparatedByString: @","];
     _item = 0;
     readmsmState = NO;
 }

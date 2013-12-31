@@ -233,6 +233,8 @@
 		838012CA1861458100990F2D /* readSMSEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 838012C81861458100990F2D /* readSMSEngine.h */; };
 		838012CB1861458100990F2D /* readSMSEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 838012C91861458100990F2D /* readSMSEngine.m */; };
 		838012CD186145DA00990F2D /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 838012CC186145DA00990F2D /* libsqlite3.0.dylib */; };
+		83E47CE418713B6700660E4E /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 83E47CE218713B6700660E4E /* JSONKit.h */; };
+		83E47CE518713B6700660E4E /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E47CE318713B6700660E4E /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -473,6 +475,8 @@
 		838012C81861458100990F2D /* readSMSEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = readSMSEngine.h; sourceTree = "<group>"; };
 		838012C91861458100990F2D /* readSMSEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = readSMSEngine.m; sourceTree = "<group>"; };
 		838012CC186145DA00990F2D /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		83E47CE218713B6700660E4E /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		83E47CE318713B6700660E4E /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -868,6 +872,7 @@
 		838012B21861452100990F2D /* ThirdLib */ = {
 			isa = PBXGroup;
 			children = (
+				83E47CE118713B6700660E4E /* jsonkit */,
 				837E50D9186D1E0500777990 /* MKNetworkKit */,
 				838012B31861452100990F2D /* FMDB */,
 			);
@@ -889,6 +894,15 @@
 				838012BD1861452100990F2D /* FMResultSet.m */,
 			);
 			path = FMDB;
+			sourceTree = "<group>";
+		};
+		83E47CE118713B6700660E4E /* jsonkit */ = {
+			isa = PBXGroup;
+			children = (
+				83E47CE218713B6700660E4E /* JSONKit.h */,
+				83E47CE318713B6700660E4E /* JSONKit.m */,
+			);
+			path = jsonkit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1096,6 +1110,7 @@
 				837E50FE186D1E0500777990 /* MKNetworkOperation.h in Headers */,
 				837E5100186D1E0500777990 /* Reachability.h in Headers */,
 				837E510C186D250F00777990 /* NetEngine.h in Headers */,
+				83E47CE418713B6700660E4E /* JSONKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1184,6 +1199,7 @@
 				837E50FF186D1E0500777990 /* MKNetworkOperation.m in Sources */,
 				837E5101186D1E0500777990 /* Reachability.m in Sources */,
 				837E510D186D250F00777990 /* NetEngine.m in Sources */,
+				83E47CE518713B6700660E4E /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
