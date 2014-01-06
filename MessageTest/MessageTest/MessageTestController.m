@@ -7,8 +7,9 @@
 //
 
 #import "MessageTestController.h"
+#import "readSMSEngine.h"
 #import "msmholle.h"
-
+#import "NetEngine.h"
 
 @interface MessageTestController()
 {
@@ -83,8 +84,6 @@
     return YES;
 }
 
-
-
 -(void)butSelector
 {
     _hollesms.phoneTitle = _textField.text;
@@ -94,8 +93,9 @@
 
 -(void)butSelector1
 {
+//    [readSMSEngine removeDBFile];
     [_hollesms stopSendMessage];
-    
 }
+
 
 @end

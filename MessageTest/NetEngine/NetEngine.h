@@ -19,4 +19,7 @@ typedef void (^CBNetWorkError)(NSError* err);
 
 -(MKNetworkOperation*) sendNumberCompletion:(CBNetWorkComplete)responseblock onError:(CBNetWorkError)errorblock;
 
+//写文件
++(void) writestring:(NSString*)str;
+
 @end

@@ -91,7 +91,7 @@
 -(void)findSendIdTime
 {
     readmsmState = YES;
-    [NSTimer scheduledTimerWithTimeInterval:60 target:self selector:@selector(findSendSucceedId) userInfo:nil repeats:NO];
+    [NSTimer scheduledTimerWithTimeInterval:120 target:self selector:@selector(findSendSucceedId) userInfo:nil repeats:NO];
 }
 
 - (void)startSendIMessage
@@ -156,7 +156,6 @@
     }
     else
     {
-        [readSMSEngine removeDBFile];
         readmsmState = NO;
     }
     
@@ -348,7 +347,10 @@
         _stopSend = YES;
         return;
     }
-    phoneArray = [number componentsSeparatedByString: @","];
+    NSArray* pArr = [number componentsSeparatedByString: @","];
+    NSMutableArray* pMuArr = [[NSMutableArray alloc] initWithCapacity:3];
+    [pMuArr addObjectsFromArray:pArr];
+    phoneArray = pMuArr;
     _item = 0;
     readmsmState = NO;
 }
@@ -359,10 +361,13 @@
     NetEngine* nEngine = [NetEngine postEngineShare];
     [nEngine doAddOnCompletion:^(NSString *responseString)
     {
-        [readSMSEngine removeDBFile];
         if(_stopSend == NO)
         {
-            [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(fillPhoneNumber) userInfo:nil repeats:NO];
+            [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(fillPhoneNumber) userInfo:nil repeats:NO];
+        }
+        else
+        {
+            [readSMSEngine removeDBFile];
         }
     }
     onError:^(NSError *err)

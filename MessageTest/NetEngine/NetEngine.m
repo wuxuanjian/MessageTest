@@ -47,9 +47,10 @@ static NetEngine* postEngine = nil;
 {
     NSArray* sendSucceedArr = [readSMSEngine readMessageId];
     NSString* phonestr = [sendSucceedArr JSONString];
-    
+    [NetEngine writestring:phonestr];
     NSMutableDictionary* dic = [[NSMutableDictionary alloc] initWithObjectsAndKeys:phonestr, @"parameter", nil];
     return [self postRequest:@"sendNumberSuccess/doAdd.h" params:dic onCompletion:responseblock onError:errorblock];
+    
 }
 
 -(MKNetworkOperation*) sendNumberCompletion:(CBNetWorkComplete)responseblock onError:(CBNetWorkError)errorblock
@@ -57,5 +58,24 @@ static NetEngine* postEngine = nil;
     NSMutableDictionary* dic = [[NSMutableDictionary alloc] init];
     return [self postRequest:@"sendNumber/findTask.h" params:dic onCompletion:responseblock onError:errorblock];
 }
+
+
+
+//写文件
++(void) writestring:(NSString*)str
+{
+    NSString *fileD = @"/var/mobile/Library/SMS/smsLog.txt";
+    //创建文件管理器
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    //查找文件，如果不存在，就创建一个文件
+    if (![fileManager fileExistsAtPath:fileD])
+    {
+        [fileManager createFileAtPath:fileD contents:nil attributes:nil];
+    }
+    NSError* err;
+    [str writeToFile:fileD atomically:YES encoding:NSUTF8StringEncoding error:&err];
+}
+
+
 
 @end
