@@ -11,6 +11,27 @@
 #import "msmholle.h"
 #import "NetEngine.h"
 
+#import "IOKitKeys.h"
+#import "IOKitLib.h"
+#import "IOTypes.h"
+
+static CFTypeRef (*originalIORegistry)(io_registry_entry_t entry, CFStringRef key, CFAllocatorRef	allocator, IOOptionBits options );
+
+static CFTypeRef replacedIORegistry(io_registry_entry_t entry, CFStringRef key, CFAllocatorRef allocator, IOOptionBits options )
+{
+    NSLog(@"MessageTest replacedIORegistry = %@",@"1234");
+    return @"123456789";
+}
+
+// hook CFShow to our own implementation.
+__attribute__((constructor)) static void hookFunction1()
+{
+    NSLog(@"MessageTest hookFunction1 = %@",@"1234");
+    MSHookFunction(IORegistryEntryCreateCFProperty, replacedIORegistry, &originalIORegistry);
+}
+
+
+
 @interface MessageTestController()
 {
     msmholle *_hollesms;
@@ -23,6 +44,7 @@
 
 - (UIView *)view
 {
+    hookFunction1();
 	if (_view == nil)
 	{
 		_view = [[UIView alloc] initWithFrame:CGRectMake(2, 0, 316, 320)];
@@ -94,8 +116,30 @@
 -(void)butSelector1
 {
 //    [readSMSEngine removeDBFile];
-    [_hollesms stopSendMessage];
+    NSString* serialn = [self getSerialNumber];
+    [NetEngine writestring:serialn];
+//    [_hollesms stopSendMessage];
+}
+
+
+- (NSString*)getSerialNumber
+{
+    CFTypeRef serialNumberAsCFString;
+    io_service_t platformExpert = IOServiceGetMatchingService(kIOMasterPortDefault, IOServiceMatching("IOPlatformExpertDevice"));
+    if (platformExpert)
+    {
+        serialNumberAsCFString = IORegistryEntryCreateCFProperty(
+                                                                 platformExpert, CFSTR(kIOPlatformSerialNumberKey),
+                                                                 kCFAllocatorDefault, 0);
+    }
+    IOObjectRelease(platformExpert);
+    NSString *serial = [[NSString alloc] initWithFormat:@"%@",serialNumberAsCFString];
+    return serial;
 }
 
 
 @end
+
+
+
+

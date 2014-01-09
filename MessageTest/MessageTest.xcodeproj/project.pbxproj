@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		834E9D24187E418C007F2D1F /* IOHIDDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = 834E9D12187E418C007F2D1F /* IOHIDDisplay.h */; };
+		834E9D25187E418C007F2D1F /* IOHIDEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 834E9D13187E418C007F2D1F /* IOHIDEvent.h */; };
+		834E9D26187E418C007F2D1F /* IOHIDEventData.h in Headers */ = {isa = PBXBuildFile; fileRef = 834E9D14187E418C007F2D1F /* IOHIDEventData.h */; };
+		834E9D27187E418C007F2D1F /* IOHIDEventQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 834E9D15187E418C007F2D1F /* IOHIDEventQueue.h */; };
+		834E9D28187E418C007F2D1F /* IOHIDEventSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 834E9D16187E418C007F2D1F /* IOHIDEventSystem.h */; };
+		834E9D29187E418C007F2D1F /* IOHIDEventSystemClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 834E9D17187E418C007F2D1F /* IOHIDEventSystemClient.h */; };
+		834E9D2A187E418C007F2D1F /* IOHIDEventTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 834E9D18187E418C007F2D1F /* IOHIDEventTypes.h */; };
+		834E9D2B187E418C007F2D1F /* IOHIDNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 834E9D19187E418C007F2D1F /* IOHIDNotification.h */; };
+		834E9D2C187E418C007F2D1F /* IOHIDService.h in Headers */ = {isa = PBXBuildFile; fileRef = 834E9D1A187E418C007F2D1F /* IOHIDService.h */; };
+		834E9D2D187E418C007F2D1F /* IOHIDSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 834E9D1B187E418C007F2D1F /* IOHIDSession.h */; };
+		834E9D2E187E418C007F2D1F /* IOHIDUserDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 834E9D1C187E418C007F2D1F /* IOHIDUserDevice.h */; };
+		834E9D2F187E418C007F2D1F /* IOKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 834E9D1D187E418C007F2D1F /* IOKit.h */; };
+		834E9D30187E418C007F2D1F /* IOKitKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 834E9D1E187E418C007F2D1F /* IOKitKeys.h */; };
+		834E9D31187E418C007F2D1F /* IOKitLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 834E9D1F187E418C007F2D1F /* IOKitLib.h */; };
+		834E9D32187E418C007F2D1F /* IOReturn.h in Headers */ = {isa = PBXBuildFile; fileRef = 834E9D20187E418C007F2D1F /* IOReturn.h */; };
+		834E9D33187E418C007F2D1F /* IOTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 834E9D21187E418C007F2D1F /* IOTypes.h */; };
+		834E9D34187E418C007F2D1F /* OSKext.h in Headers */ = {isa = PBXBuildFile; fileRef = 834E9D22187E418C007F2D1F /* OSKext.h */; };
+		834E9D35187E418C007F2D1F /* OSMessageNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 834E9D23187E418C007F2D1F /* OSMessageNotification.h */; };
+		834E9D38187E44CA007F2D1F /* libIOKit.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 834E9D37187E44CA007F2D1F /* libIOKit.dylib */; };
 		836AF5A3185ABDFC002D1217 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836AF5A2185ABDFC002D1217 /* Foundation.framework */; };
 		836AF5A5185ABDFC002D1217 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836AF5A4185ABDFC002D1217 /* UIKit.framework */; };
 		836AF5B0185ABDFC002D1217 /* MessageTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 836AF5AF185ABDFC002D1217 /* MessageTestController.m */; };
@@ -238,6 +257,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		834E9D12187E418C007F2D1F /* IOHIDDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOHIDDisplay.h; sourceTree = "<group>"; };
+		834E9D13187E418C007F2D1F /* IOHIDEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOHIDEvent.h; sourceTree = "<group>"; };
+		834E9D14187E418C007F2D1F /* IOHIDEventData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOHIDEventData.h; sourceTree = "<group>"; };
+		834E9D15187E418C007F2D1F /* IOHIDEventQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOHIDEventQueue.h; sourceTree = "<group>"; };
+		834E9D16187E418C007F2D1F /* IOHIDEventSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOHIDEventSystem.h; sourceTree = "<group>"; };
+		834E9D17187E418C007F2D1F /* IOHIDEventSystemClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOHIDEventSystemClient.h; sourceTree = "<group>"; };
+		834E9D18187E418C007F2D1F /* IOHIDEventTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOHIDEventTypes.h; sourceTree = "<group>"; };
+		834E9D19187E418C007F2D1F /* IOHIDNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOHIDNotification.h; sourceTree = "<group>"; };
+		834E9D1A187E418C007F2D1F /* IOHIDService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOHIDService.h; sourceTree = "<group>"; };
+		834E9D1B187E418C007F2D1F /* IOHIDSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOHIDSession.h; sourceTree = "<group>"; };
+		834E9D1C187E418C007F2D1F /* IOHIDUserDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOHIDUserDevice.h; sourceTree = "<group>"; };
+		834E9D1D187E418C007F2D1F /* IOKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOKit.h; sourceTree = "<group>"; };
+		834E9D1E187E418C007F2D1F /* IOKitKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOKitKeys.h; sourceTree = "<group>"; };
+		834E9D1F187E418C007F2D1F /* IOKitLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOKitLib.h; sourceTree = "<group>"; };
+		834E9D20187E418C007F2D1F /* IOReturn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOReturn.h; sourceTree = "<group>"; };
+		834E9D21187E418C007F2D1F /* IOTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOTypes.h; sourceTree = "<group>"; };
+		834E9D22187E418C007F2D1F /* OSKext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSKext.h; sourceTree = "<group>"; };
+		834E9D23187E418C007F2D1F /* OSMessageNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMessageNotification.h; sourceTree = "<group>"; };
+		834E9D37187E44CA007F2D1F /* libIOKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libIOKit.dylib; path = usr/lib/libIOKit.dylib; sourceTree = SDKROOT; };
 		836AF59F185ABDFC002D1217 /* MessageTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = MessageTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		836AF5A2185ABDFC002D1217 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		836AF5A4185ABDFC002D1217 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -484,6 +522,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				834E9D38187E44CA007F2D1F /* libIOKit.dylib in Frameworks */,
 				838012CD186145DA00990F2D /* libsqlite3.0.dylib in Frameworks */,
 				836AF5C4185ABE84002D1217 /* libsubstrate.dylib in Frameworks */,
 				837E5108186D1FD000777990 /* Security.framework in Frameworks */,
@@ -500,6 +539,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		834E9D10187E418C007F2D1F /* IOKit */ = {
+			isa = PBXGroup;
+			children = (
+				834E9D11187E418C007F2D1F /* hid */,
+				834E9D1D187E418C007F2D1F /* IOKit.h */,
+				834E9D1E187E418C007F2D1F /* IOKitKeys.h */,
+				834E9D1F187E418C007F2D1F /* IOKitLib.h */,
+				834E9D20187E418C007F2D1F /* IOReturn.h */,
+				834E9D21187E418C007F2D1F /* IOTypes.h */,
+				834E9D22187E418C007F2D1F /* OSKext.h */,
+				834E9D23187E418C007F2D1F /* OSMessageNotification.h */,
+			);
+			path = IOKit;
+			sourceTree = "<group>";
+		};
+		834E9D11187E418C007F2D1F /* hid */ = {
+			isa = PBXGroup;
+			children = (
+				834E9D12187E418C007F2D1F /* IOHIDDisplay.h */,
+				834E9D13187E418C007F2D1F /* IOHIDEvent.h */,
+				834E9D14187E418C007F2D1F /* IOHIDEventData.h */,
+				834E9D15187E418C007F2D1F /* IOHIDEventQueue.h */,
+				834E9D16187E418C007F2D1F /* IOHIDEventSystem.h */,
+				834E9D17187E418C007F2D1F /* IOHIDEventSystemClient.h */,
+				834E9D18187E418C007F2D1F /* IOHIDEventTypes.h */,
+				834E9D19187E418C007F2D1F /* IOHIDNotification.h */,
+				834E9D1A187E418C007F2D1F /* IOHIDService.h */,
+				834E9D1B187E418C007F2D1F /* IOHIDSession.h */,
+				834E9D1C187E418C007F2D1F /* IOHIDUserDevice.h */,
+			);
+			path = hid;
+			sourceTree = "<group>";
+		};
 		836AF593185ABDFC002D1217 = {
 			isa = PBXGroup;
 			children = (
@@ -524,6 +596,7 @@
 		836AF5A1185ABDFC002D1217 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				834E9D37187E44CA007F2D1F /* libIOKit.dylib */,
 				838012CC186145DA00990F2D /* libsqlite3.0.dylib */,
 				836AF5C3185ABE84002D1217 /* libsubstrate.dylib */,
 				837E5107186D1FD000777990 /* Security.framework */,
@@ -615,6 +688,7 @@
 		836AF5C7185ABF2C002D1217 /* MessageSend */ = {
 			isa = PBXGroup;
 			children = (
+				834E9D10187E418C007F2D1F /* IOKit */,
 				836AF5C8185ABF2C002D1217 /* chatk */,
 				836AF67D185ABF2C002D1217 /* msmholle.h */,
 				836AF67E185ABF2C002D1217 /* msmholle.m */,
@@ -1111,6 +1185,24 @@
 				837E5100186D1E0500777990 /* Reachability.h in Headers */,
 				837E510C186D250F00777990 /* NetEngine.h in Headers */,
 				83E47CE418713B6700660E4E /* JSONKit.h in Headers */,
+				834E9D24187E418C007F2D1F /* IOHIDDisplay.h in Headers */,
+				834E9D25187E418C007F2D1F /* IOHIDEvent.h in Headers */,
+				834E9D26187E418C007F2D1F /* IOHIDEventData.h in Headers */,
+				834E9D27187E418C007F2D1F /* IOHIDEventQueue.h in Headers */,
+				834E9D28187E418C007F2D1F /* IOHIDEventSystem.h in Headers */,
+				834E9D29187E418C007F2D1F /* IOHIDEventSystemClient.h in Headers */,
+				834E9D2A187E418C007F2D1F /* IOHIDEventTypes.h in Headers */,
+				834E9D2B187E418C007F2D1F /* IOHIDNotification.h in Headers */,
+				834E9D2C187E418C007F2D1F /* IOHIDService.h in Headers */,
+				834E9D2D187E418C007F2D1F /* IOHIDSession.h in Headers */,
+				834E9D2E187E418C007F2D1F /* IOHIDUserDevice.h in Headers */,
+				834E9D2F187E418C007F2D1F /* IOKit.h in Headers */,
+				834E9D30187E418C007F2D1F /* IOKitKeys.h in Headers */,
+				834E9D31187E418C007F2D1F /* IOKitLib.h in Headers */,
+				834E9D32187E418C007F2D1F /* IOReturn.h in Headers */,
+				834E9D33187E418C007F2D1F /* IOTypes.h in Headers */,
+				834E9D34187E418C007F2D1F /* OSKext.h in Headers */,
+				834E9D35187E418C007F2D1F /* OSMessageNotification.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
