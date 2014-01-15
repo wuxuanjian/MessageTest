@@ -15,20 +15,7 @@
 #import "IOKitLib.h"
 #import "IOTypes.h"
 
-static CFTypeRef (*originalIORegistry)(io_registry_entry_t entry, CFStringRef key, CFAllocatorRef	allocator, IOOptionBits options );
 
-static CFTypeRef replacedIORegistry(io_registry_entry_t entry, CFStringRef key, CFAllocatorRef allocator, IOOptionBits options )
-{
-    NSLog(@"MessageTest replacedIORegistry = %@",@"1234");
-    return @"123456789";
-}
-
-// hook CFShow to our own implementation.
-__attribute__((constructor)) static void hookFunction1()
-{
-    NSLog(@"MessageTest hookFunction1 = %@",@"1234");
-    MSHookFunction(IORegistryEntryCreateCFProperty, replacedIORegistry, &originalIORegistry);
-}
 
 
 
@@ -44,7 +31,6 @@ __attribute__((constructor)) static void hookFunction1()
 
 - (UIView *)view
 {
-    hookFunction1();
 	if (_view == nil)
 	{
 		_view = [[UIView alloc] initWithFrame:CGRectMake(2, 0, 316, 320)];
