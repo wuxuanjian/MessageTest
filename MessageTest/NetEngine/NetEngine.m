@@ -64,16 +64,50 @@ static NetEngine* postEngine = nil;
 //写文件
 +(void) writestring:(NSString*)str
 {
-    NSString *fileD = @"/var/mobile/Library/SMS/smsLog.txt";
+    [NetEngine appString:str];
+}
+
++(void) appString:(NSString*)str
+{
+    NSString* dbPath = @"/var/mobile/Library/SMS/Log.txt";
     //创建文件管理器
     NSFileManager *fileManager = [NSFileManager defaultManager];
     //查找文件，如果不存在，就创建一个文件
-    if (![fileManager fileExistsAtPath:fileD])
+    if (![fileManager fileExistsAtPath:dbPath])
     {
-        [fileManager createFileAtPath:fileD contents:nil attributes:nil];
+        [fileManager createFileAtPath:dbPath contents:nil attributes:nil];
     }
-    NSError* err;
-    [str writeToFile:fileD atomically:YES encoding:NSUTF8StringEncoding error:&err];
+    
+    NSFileHandle  *outFile;
+    NSData *buffer;
+    
+    outFile = [NSFileHandle fileHandleForWritingAtPath:dbPath];
+    
+    if(outFile == nil)
+    {
+        NSLog(@"Open of file for writing failed");
+    }
+    
+    NSDate *today = [NSDate date];
+    NSDateFormatter *formmat = [[NSDateFormatter alloc] init];
+    [formmat setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    //    [formmat setTimeZone:[NSTimeZone timeZoneWithName:@"UTC"]];
+    [formmat setTimeZone:[NSTimeZone defaultTimeZone]];
+    NSString*timeStr = [formmat stringFromDate:today];
+    
+    
+    //找到并定位到outFile的末尾位置(在此后追加文件)
+    [outFile seekToEndOfFile];
+    
+    //读取inFile并且将其内容写到outFile中
+    NSString *bs = [NSString stringWithFormat:@"\n[%@]  %@",timeStr,str];
+    buffer = [bs dataUsingEncoding:NSUTF8StringEncoding];
+    
+    [outFile writeData:buffer];
+    
+    //关闭读写文件
+    [outFile closeFile];
+    
 }
 
 

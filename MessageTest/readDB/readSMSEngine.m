@@ -36,7 +36,7 @@ static NSUInteger dbitme = 0;
     
     // 查找表 AllTheQustions
     NSString* itemstr = [NSString stringWithFormat:@"%d",dbitme];
-    FMResultSet* resultSet = [database executeQuery: @"select * from message where ROWID > ?",itemstr];
+    FMResultSet* resultSet = [database executeQuery: @"select * from message where ROWID >= ?",itemstr];
     
     // 逐行读取数据
     while ( [ resultSet next ] )
@@ -45,13 +45,14 @@ static NSUInteger dbitme = 0;
         NSString* phone = [ resultSet stringForColumn: @"madrid_handle" ];
 //        NSString* madridFlags = [ resultSet stringForColumn: @"madrid_flags" ];
         NSString* madriderror = [ resultSet stringForColumn: @"madrid_error" ];
+        NSString* madriddatedelivered = [ resultSet stringForColumn: @"madrid_date_delivered" ];
         NSString *bphone = phone;
         if([phone hasPrefix:@"+86"])
         {
             bphone = [phone substringFromIndex:3];
         }
         
-        if([madriderror isEqualToString:@"0"])
+        if([madriderror isEqualToString:@"0"] && ![madriddatedelivered isEqualToString:@"0"])
         {
             NSDictionary* dic = [NSDictionary dictionaryWithObjectsAndKeys:bphone,@"phoneNumber"
                                  ,@"yes",@"status"

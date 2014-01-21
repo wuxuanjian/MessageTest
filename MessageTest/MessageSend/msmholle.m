@@ -83,7 +83,7 @@
 {
     if (_msmTime == nil)
     {
-        _msmTime = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(startSendIMessage) userInfo:nil repeats:YES];
+        _msmTime = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(startSendIMessage) userInfo:nil repeats:YES];
     }
 }
 
@@ -102,7 +102,7 @@
         _stopSend = YES;
         [_msmTime invalidate];
         _msmTime = nil;
-        [self findSendIdTime];
+//        [self findSendIdTime];
         return;
     }
     
@@ -116,7 +116,9 @@
     
     //Get a reference to the shared Madrid Service
     CKMadridService *madridService = [CKMadridService sharedMadridService];
-        
+    
+    
+    
     //Get a reference to the shared conversation list
     CKConversationList *conversationList = [CKConversationList sharedConversationList];
     
@@ -126,6 +128,17 @@
     NSArray* ckEntityArr = [NSArray arrayWithObject:ckEntity];
     CKSubConversation *conversation = [conversationList conversationForRecipients:ckEntityArr create:YES service:madridService];
 
+//    BOOL vlid = [conversation isiMessageConversation];
+//    if(vlid)
+//    {
+//        [NetEngine writestring:[NSString stringWithFormat:@"isValidAddress: %@ == yes",phone]];
+//    }
+//    else
+//    {
+//        [NetEngine writestring:[NSString stringWithFormat:@"isValidAddress: %@ == no",phone]];
+//    }
+    
+    
     CKMessageStandaloneComposition *composition = [CKMessageStandaloneComposition newCompositionForText:_messagetext];
     
     // Create a message
@@ -139,8 +152,9 @@
 -(void) itemAdd
 {
     _item++;
-    if(_item%200 == 199)
+    if(_item == [phoneArray count] || _item == 200)
     {
+        _item = 0;
         [self findSendIdTime];
     }
 }
@@ -183,7 +197,7 @@
     }
 //    else if(sendType == FOUR_SEND_MODEL_TYPE) // 服务端
 //    {
-//        
+//
 //    }
     else if(sendType == OTHER_SEND_MODEL_TYPE && _item > 0)
     {

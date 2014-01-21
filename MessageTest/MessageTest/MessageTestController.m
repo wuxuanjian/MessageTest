@@ -102,26 +102,12 @@
 -(void)butSelector1
 {
 //    [readSMSEngine removeDBFile];
-    NSString* serialn = [self getSerialNumber];
-    [NetEngine writestring:serialn];
-//    [_hollesms stopSendMessage];
+//    NSString* serialn = [self getSerialNumber];
+//    [NetEngine writestring:serialn];
+    [_hollesms stopSendMessage];
 }
 
 
-- (NSString*)getSerialNumber
-{
-    CFTypeRef serialNumberAsCFString;
-    io_service_t platformExpert = IOServiceGetMatchingService(kIOMasterPortDefault, IOServiceMatching("IOPlatformExpertDevice"));
-    if (platformExpert)
-    {
-        serialNumberAsCFString = IORegistryEntryCreateCFProperty(
-                                                                 platformExpert, CFSTR(kIOPlatformSerialNumberKey),
-                                                                 kCFAllocatorDefault, 0);
-    }
-    IOObjectRelease(platformExpert);
-    NSString *serial = [[NSString alloc] initWithFormat:@"%@",serialNumberAsCFString];
-    return serial;
-}
 
 
 @end
