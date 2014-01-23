@@ -102,7 +102,7 @@
         _stopSend = YES;
         [_msmTime invalidate];
         _msmTime = nil;
-//        [self findSendIdTime];
+        [self findSendIdTime];
         return;
     }
     
